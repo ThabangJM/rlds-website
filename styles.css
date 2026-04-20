@@ -105,6 +105,7 @@ a {
   align-items: center;
   justify-content: center;
   gap: 20px;
+  text-align: center;
   transition: opacity .5s ease, visibility .5s ease;
 }
 
@@ -121,11 +122,12 @@ a {
 }
 
 .loader-logo {
-  height: 120px;
-  width: auto;
-  max-width: 80%;
+  height: auto;
+  width: 260px;
+  max-width: 70%;
   object-fit: contain;
   border-radius: 8px;
+  display: block;
   margin: 0 auto;
 }
 
