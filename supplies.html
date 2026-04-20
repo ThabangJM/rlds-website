@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Supplies — RLDS</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ============ PAGE LOADER ============ -->
+  <div class="page-loader" id="pageLoader" role="status" aria-label="Loading page">
+    <div class="loader-spinner"></div>
+    <img src="RLDS Logo.svg" alt="RLDS" class="loader-logo" />
+  </div>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar scrolled" id="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <img src="RLDS Logo.svg" alt="Rialivhuwa Diversified Solutions" class="navbar__logo-img" />
+      </a>
+      <nav class="navbar__links" id="navLinks" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="supplies.html" class="active">Supplies</a>
+        <a href="stationery.html">Stationery</a>
+        <a href="packaging.html">Packaging</a>
+        <a href="planning.html">Planning</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="index.html#contact" class="nav-quote-btn quote-trigger-link">Get Quote</a>
+      </nav>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ PAGE HERO BANNER ============ -->
+  <section class="page-hero">
+    <div class="page-hero__overlay"></div>
+    <div class="page-hero__bg" style="background-image: url('https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?w=1400&q=80')"></div>
+    <div class="container page-hero__content">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a> <span>/</span> <span>All Supplies</span>
+      </nav>
+      <h1>Our Complete Supply Range</h1>
+      <p>Explore all the office supply categories we offer — from stationery to packaging and everything in between.</p>
+    </div>
+  </section>
+
+  <!-- ============ SUPPLY CATEGORIES ============ -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section__title center">Browse by Category</h2>
+      <p class="section__desc center">Click on any category to explore detailed product information, brands, and options available.</p>
+
+      <div class="supply-categories-grid">
+
+        <a href="stationery.html" class="supply-category-card">
+          <div class="supply-category-card__image">
+            <img src="https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?w=500&q=80" alt="Stationery" loading="lazy" />
+          </div>
+          <div class="supply-category-card__content">
+            <h3>Office Stationery</h3>
+            <p>Pens, pencils, notebooks, paper, filing, adhesives, scissors, calculators and more. Everything for the daily running of your office.</p>
+            <span class="supply-category-card__link">Explore Stationery &rarr;</span>
+          </div>
+        </a>
+
+        <a href="packaging.html" class="supply-category-card">
+          <div class="supply-category-card__image">
+            <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=500&q=80" alt="Packaging" loading="lazy" />
+          </div>
+          <div class="supply-category-card__content">
+            <h3>Packaging Supplies</h3>
+            <p>Boxes, envelopes, tape, bubble wrap, labels, bags, and protective materials for shipping and storage.</p>
+            <span class="supply-category-card__link">Explore Packaging &rarr;</span>
+          </div>
+        </a>
+
+        <a href="planning.html" class="supply-category-card">
+          <div class="supply-category-card__image">
+            <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=500&q=80" alt="Planning" loading="lazy" />
+          </div>
+          <div class="supply-category-card__content">
+            <h3>Planning &amp; Organisation</h3>
+            <p>Calendars, diaries, whiteboards, to-do lists, timers, and all the tools you need to plan effectively.</p>
+            <span class="supply-category-card__link">Explore Planning &rarr;</span>
+          </div>
+        </a>
+
+        <a href="desk-organisation.html" class="supply-category-card">
+          <div class="supply-category-card__image">
+            <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?w=500&q=80" alt="Desk Organisation" loading="lazy" />
+          </div>
+          <div class="supply-category-card__content">
+            <h3>Desk &amp; Organisation</h3>
+            <p>Pen holders, document trays, drawer organisers, monitor stands, shelves, and desk accessories.</p>
+            <span class="supply-category-card__link">Explore Desk &amp; Organisation &rarr;</span>
+          </div>
+        </a>
+
+        <a href="furniture.html" class="supply-category-card">
+          <div class="supply-category-card__image">
+            <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=500&q=80" alt="Office Furniture" loading="lazy" />
+          </div>
+          <div class="supply-category-card__content">
+            <h3>Office Furniture</h3>
+            <p>Desks, ergonomic chairs, filing cabinets, boardroom tables, reception furniture, and accessories for a complete workspace.</p>
+            <span class="supply-category-card__link">Explore Office Furniture &rarr;</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FULL SUPPLY LIST ============ -->
+  <section class="section" style="background: var(--neutral);">
+    <div class="container">
+      <h2 class="section__title center">Full Supply List at a Glance</h2>
+      <p class="section__desc center">A quick overview of everything we supply. Need something specific? Get in touch for a quote.</p>
+
+      <div class="supply-overview-grid">
+        <div class="supply-overview-card">
+          <h4>Writing &amp; Drawing</h4>
+          <ul>
+            <li>Ballpoint &amp; Gel Pens</li>
+            <li>Pencils &amp; Mechanical Pencils</li>
+            <li>Markers &amp; Highlighters</li>
+            <li>Crayons &amp; Colouring</li>
+          </ul>
+        </div>
+        <div class="supply-overview-card">
+          <h4>Paper &amp; Notebooks</h4>
+          <ul>
+            <li>A4 / A3 / A5 Paper Reams</li>
+            <li>Hard Cover Notebooks</li>
+            <li>Legal Pads &amp; Notepads</li>
+            <li>Specialty &amp; Coloured Paper</li>
+          </ul>
+        </div>
+        <div class="supply-overview-card">
+          <h4>Filing &amp; Storage</h4>
+          <ul>
+            <li>Lever Arch Files &amp; Binders</li>
+            <li>Suspension Files</li>
+            <li>Document Wallets</li>
+            <li>Archive Boxes</li>
+          </ul>
+        </div>
+        <div class="supply-overview-card">
+          <h4>Adhesives &amp; Fasteners</h4>
+          <ul>
+            <li>Glue Sticks &amp; Liquid Glue</li>
+            <li>Tape &amp; Dispensers</li>
+            <li>Staplers &amp; Staples</li>
+            <li>Paper Clips &amp; Binder Clips</li>
+          </ul>
+        </div>
+        <div class="supply-overview-card">
+          <h4>Packaging</h4>
+          <ul>
+            <li>Boxes &amp; Cartons</li>
+            <li>Envelopes &amp; Mailers</li>
+            <li>Bubble Wrap &amp; Protective</li>
+            <li>Labels &amp; Stickers</li>
+          </ul>
+        </div>
+        <div class="supply-overview-card">
+          <h4>Planning</h4>
+          <ul>
+            <li>Wall Calendars &amp; Planners</li>
+            <li>Diaries &amp; Desk Pads</li>
+            <li>Whiteboards &amp; Noticeboards</li>
+            <li>To-Do Lists &amp; Task Pads</li>
+          </ul>
+        </div>
+        <div class="supply-overview-card">
+          <h4>Desk Organisation</h4>
+          <ul>
+            <li>Pen Holders &amp; Caddies</li>
+            <li>Document Trays &amp; Racks</li>
+            <li>Monitor Stands</li>
+            <li>Desk Accessories</li>
+          </ul>
+        </div>
+        <div class="supply-overview-card">
+          <h4>Printing &amp; Tech</h4>
+          <ul>
+            <li>Ink &amp; Toner Cartridges</li>
+            <li>USB Flash Drives</li>
+            <li>Calculators</li>
+            <li>Label Printers</li>
+          </ul>
+        </div>
+        <div class="supply-overview-card">
+          <h4>Cleaning Supplies</h4>
+          <ul>
+            <li>Hand Sanitiser</li>
+            <li>Disinfectant Wipes</li>
+            <li>Tissues &amp; Paper Towels</li>
+            <li>Waste Bins &amp; Bags</li>
+          </ul>
+        </div>
+        <div class="supply-overview-card">
+          <h4>Office Furniture</h4>
+          <ul>
+            <li>Desks &amp; Workstations</li>
+            <li>Ergonomic Office Chairs</li>
+            <li>Filing Cabinets &amp; Storage</li>
+            <li>Boardroom &amp; Reception</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="detail-cta section">
+    <div class="container detail-cta__inner">
+      <h2>Can't Find What You Need?</h2>
+      <p>We supply hundreds of products beyond what's listed here. Contact us with your requirements and we'll source it for you.</p>
+      <div class="detail-cta__buttons">
+        <a href="index.html#contact" class="btn btn--primary">Get a Quote</a>
+        <a href="index.html" class="btn btn--outline-dark">Back to Home</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" class="navbar__logo">
+          <img src="RLDS Logo.svg" alt="Rialivhuwa Diversified Solutions" class="footer__logo-img" />
+        </a>
+        <p>Your guide to quality office stationery and supplies across South Africa.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="supplies.html">Supplies</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+      <div class="footer__col">
+        <h4>Supplies</h4>
+        <a href="stationery.html">Stationery</a>
+        <a href="packaging.html">Packaging</a>
+        <a href="planning.html">Planning</a>
+        <a href="furniture.html">Office Furniture</a>
+      </div>
+      <div class="footer__col">
+        <h4>Connect</h4>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; 2026 Rialivhuwa Diversified Solutions. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">&#8679;</button>
+
+  <a href="https://wa.me/27112345678" target="_blank" rel="noopener noreferrer" class="whatsapp-btn" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 32 32" width="28" height="28" fill="#fff">
+      <path d="M16.004 0C7.164 0 .004 7.16.004 16c0 2.82.736 5.58 2.136 8.008L.004 32l8.196-2.108A15.93 15.93 0 0016.004 32C24.844 32 32 24.84 32 16S24.844 0 16.004 0zm0 29.12a13.08 13.08 0 01-6.86-1.932l-.492-.292-4.86 1.252 1.296-4.728-.324-.512A13.04 13.04 0 012.884 16c0-7.24 5.884-13.12 13.12-13.12 7.24 0 13.12 5.88 13.12 13.12s-5.88 13.12-13.12 13.12zm7.2-9.828c-.396-.2-2.34-1.152-2.704-1.284-.36-.132-.624-.2-.888.2-.264.396-1.02 1.284-1.248 1.548-.228.264-.46.3-.852.1-.396-.2-1.668-.616-3.18-1.96-1.176-1.044-1.968-2.336-2.2-2.732-.228-.396-.024-.612.172-.808.176-.176.396-.46.592-.692.2-.228.264-.396.396-.66.132-.264.068-.492-.032-.692-.1-.2-.888-2.14-1.22-2.932-.32-.768-.644-.664-.888-.676-.228-.012-.492-.016-.756-.016s-.692.1-1.052.492c-.36.396-1.38 1.348-1.38 3.288 0 1.94 1.412 3.816 1.612 4.08.2.264 2.784 4.252 6.744 5.96.944.408 1.68.652 2.256.832.948.3 1.812.26 2.492.156.76-.112 2.34-.956 2.672-1.876.328-.924.328-1.716.228-1.876-.1-.164-.36-.264-.756-.46z"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>

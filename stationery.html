@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Office Stationery Supplies — RLDS</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ============ PAGE LOADER ============ -->
+  <div class="page-loader" id="pageLoader" role="status" aria-label="Loading page">
+    <div class="loader-spinner"></div>
+    <img src="RLDS Logo.svg" alt="RLDS" class="loader-logo" />
+  </div>
+
+  <!-- ============ SCROLL PROGRESS BAR ============ -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar scrolled" id="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <img src="RLDS Logo.svg" alt="Rialivhuwa Diversified Solutions" class="navbar__logo-img" />
+      </a>
+      <nav class="navbar__links" id="navLinks" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="supplies.html">Supplies</a>
+        <a href="stationery.html" class="active">Stationery</a>
+        <a href="packaging.html">Packaging</a>
+        <a href="planning.html">Planning</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="index.html#contact" class="nav-quote-btn quote-trigger-link">Get Quote</a>
+      </nav>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ PAGE HERO BANNER ============ -->
+  <section class="page-hero">
+    <div class="page-hero__overlay"></div>
+    <div class="page-hero__bg" style="background-image: url('https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?w=1400&q=80')"></div>
+    <div class="container page-hero__content">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a> <span>/</span> <a href="supplies.html">Supplies</a> <span>/</span> <span>Stationery</span>
+      </nav>
+      <h1>Office Stationery Supplies</h1>
+      <p>Everything your desk needs — pens, paper, notebooks, calculators, and more.</p>
+    </div>
+  </section>
+
+  <!-- ============ INTRO ============ -->
+  <section class="detail-intro section">
+    <div class="container detail-intro__grid">
+      <div class="detail-intro__text">
+        <h2 class="section__title">Equip Your Workspace with the Best Stationery</h2>
+        <p>Office stationery is the backbone of every productive workspace. From writing instruments that feel great in your hand to notebooks that capture your best ideas — the right tools make all the difference.</p>
+        <p>At <strong>RLDS</strong>, we supply a comprehensive range of stationery products from trusted brands. Whether you're kitting out a home office or outfitting an entire corporate floor, we have the quality and quantity to match your needs.</p>
+      </div>
+      <div class="detail-intro__image">
+        <img src="https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?w=600&q=80" alt="Stationery supplies on a desk" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRODUCT CATEGORIES ============ -->
+  <section class="detail-categories section" style="background: var(--neutral);">
+    <div class="container">
+      <h2 class="section__title center">Stationery Categories</h2>
+      <p class="section__desc center">Browse our range of office stationery organised by category. Click to request a quote for any category.</p>
+
+      <div class="detail-grid">
+
+        <div class="detail-card">
+          <div class="detail-card__icon">&#9998;</div>
+          <h3>Pens &amp; Pencils</h3>
+          <p>Ballpoint pens, gel pens, felt-tip markers, mechanical pencils, and writing sets. We stock BIC, Pilot, Staedtler, Pentel and other leading brands.</p>
+          <ul>
+            <li>Ballpoint Pens (Blue, Black, Red)</li>
+            <li>Gel Ink Pens</li>
+            <li>Permanent &amp; Whiteboard Markers</li>
+            <li>Mechanical &amp; Graphite Pencils</li>
+            <li>Highlighters (Full Colour Range)</li>
+            <li>Executive Pen Sets</li>
+          </ul>
+        </div>
+
+        <div class="detail-card">
+          <div class="detail-card__icon">&#128221;</div>
+          <h3>Paper &amp; Notebooks</h3>
+          <p>A4 paper reams, notebooks, notepads, legal pads, and specialty paper for every printing and writing need.</p>
+          <ul>
+            <li>A4 White Paper (80gsm / 100gsm)</li>
+            <li>A3 &amp; A5 Paper</li>
+            <li>Hard Cover Notebooks</li>
+            <li>Spiral Bound Notepads</li>
+            <li>Legal Pads &amp; Memo Books</li>
+            <li>Coloured &amp; Specialty Paper</li>
+          </ul>
+        </div>
+
+        <div class="detail-card">
+          <div class="detail-card__icon">&#128193;</div>
+          <h3>Filing &amp; Folders</h3>
+          <p>Lever arch files, ring binders, suspension files, document wallets, and filing accessories to keep your documents organised.</p>
+          <ul>
+            <li>Lever Arch Files (A4)</li>
+            <li>Ring Binders (2-Ring / 4-Ring)</li>
+            <li>Suspension Files &amp; Rails</li>
+            <li>Document Wallets &amp; Envelopes</li>
+            <li>Presentation Folders</li>
+            <li>Dividers &amp; Index Tabs</li>
+          </ul>
+        </div>
+
+        <div class="detail-card">
+          <div class="detail-card__icon">&#128268;</div>
+          <h3>Adhesives &amp; Fasteners</h3>
+          <p>Glue sticks, tape, staplers, paper clips, and all the fastening supplies your office needs to stay together.</p>
+          <ul>
+            <li>Pritt Glue Sticks &amp; Liquid Glue</li>
+            <li>Sellotape &amp; Scotch Tape</li>
+            <li>Staplers &amp; Staples</li>
+            <li>Paper Clips &amp; Binder Clips</li>
+            <li>Punch Machines (2-Hole / 4-Hole)</li>
+            <li>Rubber Bands &amp; Pins</li>
+          </ul>
+        </div>
+
+        <div class="detail-card">
+          <div class="detail-card__icon">&#128187;</div>
+          <h3>Small Electronics</h3>
+          <p>Desktop calculators, label printers, USB drives, and small electronic accessories that support daily office operations.</p>
+          <ul>
+            <li>Desktop &amp; Scientific Calculators</li>
+            <li>Label Makers &amp; Tape</li>
+            <li>USB Flash Drives</li>
+            <li>Desk Lamps</li>
+            <li>Battery Packs (AA, AAA)</li>
+            <li>Surge Protectors &amp; Extension Cords</li>
+          </ul>
+        </div>
+
+        <div class="detail-card">
+          <div class="detail-card__icon">&#9986;</div>
+          <h3>Cutting &amp; Measuring</h3>
+          <p>Scissors, craft knives, rulers, cutting mats, and measuring tools for precise office and workshop tasks.</p>
+          <ul>
+            <li>Office Scissors (Various Sizes)</li>
+            <li>Craft Knives &amp; Blades</li>
+            <li>Steel &amp; Plastic Rulers</li>
+            <li>Paper Trimmers &amp; Guillotines</li>
+            <li>Cutting Mats</li>
+            <li>Erasers &amp; Correction Fluid</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BRANDS WE STOCK ============ -->
+  <section class="detail-brands section">
+    <div class="container">
+      <h2 class="section__title center">Stationery Brands We Stock</h2>
+      <p class="section__desc center">We partner with South Africa's most trusted stationery brands to ensure consistent quality.</p>
+      <div class="detail-brands__grid">
+        <div class="detail-brand"><strong>BIC</strong><span>Pens &amp; Writing</span></div>
+        <div class="detail-brand"><strong>Staedtler</strong><span>Pencils &amp; Markers</span></div>
+        <div class="detail-brand"><strong>Pilot</strong><span>Gel &amp; Ink Pens</span></div>
+        <div class="detail-brand"><strong>Pentel</strong><span>Mechanical Pencils</span></div>
+        <div class="detail-brand"><strong>Croxley</strong><span>Notebooks &amp; Paper</span></div>
+        <div class="detail-brand"><strong>Mondi</strong><span>Rotatrim Paper</span></div>
+        <div class="detail-brand"><strong>Treeline</strong><span>Filing &amp; Folders</span></div>
+        <div class="detail-brand"><strong>Bantex</strong><span>Binders &amp; Organisers</span></div>
+        <div class="detail-brand"><strong>Pritt</strong><span>Glue &amp; Adhesives</span></div>
+        <div class="detail-brand"><strong>Scotch 3M</strong><span>Tape &amp; Fasteners</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="detail-cta section">
+    <div class="container detail-cta__inner">
+      <h2>Need Stationery for Your Office?</h2>
+      <p>Whether it's a single pack or a bulk order, we'll put together a quote tailored to your needs. Fast delivery across South Africa.</p>
+      <div class="detail-cta__buttons">
+        <a href="index.html#contact" class="btn btn--primary">Get a Quote</a>
+        <a href="supplies.html" class="btn btn--outline-dark">View All Supplies</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" class="navbar__logo">
+          <img src="RLDS Logo.svg" alt="Rialivhuwa Diversified Solutions" class="footer__logo-img" />
+        </a>
+        <p>Your guide to quality office stationery and supplies across South Africa.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="supplies.html">Supplies</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+      <div class="footer__col">
+        <h4>Supplies</h4>
+        <a href="stationery.html">Stationery</a>
+        <a href="packaging.html">Packaging</a>
+        <a href="planning.html">Planning</a>
+        <a href="furniture.html">Office Furniture</a>
+      </div>
+      <div class="footer__col">
+        <h4>Connect</h4>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; 2026 Rialivhuwa Diversified Solutions. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">&#8679;</button>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/27112345678" target="_blank" rel="noopener noreferrer" class="whatsapp-btn" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 32 32" width="28" height="28" fill="#fff">
+      <path d="M16.004 0C7.164 0 .004 7.16.004 16c0 2.82.736 5.58 2.136 8.008L.004 32l8.196-2.108A15.93 15.93 0 0016.004 32C24.844 32 32 24.84 32 16S24.844 0 16.004 0zm0 29.12a13.08 13.08 0 01-6.86-1.932l-.492-.292-4.86 1.252 1.296-4.728-.324-.512A13.04 13.04 0 012.884 16c0-7.24 5.884-13.12 13.12-13.12 7.24 0 13.12 5.88 13.12 13.12s-5.88 13.12-13.12 13.12zm7.2-9.828c-.396-.2-2.34-1.152-2.704-1.284-.36-.132-.624-.2-.888.2-.264.396-1.02 1.284-1.248 1.548-.228.264-.46.3-.852.1-.396-.2-1.668-.616-3.18-1.96-1.176-1.044-1.968-2.336-2.2-2.732-.228-.396-.024-.612.172-.808.176-.176.396-.46.592-.692.2-.228.264-.396.396-.66.132-.264.068-.492-.032-.692-.1-.2-.888-2.14-1.22-2.932-.32-.768-.644-.664-.888-.676-.228-.012-.492-.016-.756-.016s-.692.1-1.052.492c-.36.396-1.38 1.348-1.38 3.288 0 1.94 1.412 3.816 1.612 4.08.2.264 2.784 4.252 6.744 5.96.944.408 1.68.652 2.256.832.948.3 1.812.26 2.492.156.76-.112 2.34-.956 2.672-1.876.328-.924.328-1.716.228-1.876-.1-.164-.36-.264-.756-.46z"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>

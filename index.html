@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RLDS Office Stationery — Your Guide to Quality Office Supplies</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ============ SKIP TO CONTENT (A11y) ============ -->
+  <a href="#about" class="skip-link">Skip to main content</a>
+
+  <!-- ============ PAGE LOADER ============ -->
+  <div class="page-loader" id="pageLoader" role="status" aria-label="Loading page">
+    <div class="loader-spinner"></div>
+    <img src="RLDS Logo.svg" alt="RLDS" class="loader-logo" />
+  </div>
+
+  <!-- ============ SCROLL PROGRESS BAR ============ -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#" class="navbar__logo">
+        <img src="RLDS Logo.svg" alt="Rialivhuwa Diversified Solutions" class="navbar__logo-img" />
+      </a>
+      <nav class="navbar__links" id="navLinks" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="supplies.html">Supplies</a>
+        <a href="stationery.html">Stationery</a>
+        <a href="packaging.html">Packaging</a>
+        <a href="planning.html">Planning</a>
+        <a href="#contact">Contact</a>
+        <a href="#" class="quote-trigger nav-quote-btn">Get Quote</a>
+      </nav>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ HERO (Parallax + Typing) ============ -->
+  <section class="hero" id="home">
+    <div class="hero__parallax" id="heroParallax"></div>
+    <div class="hero__overlay"></div>
+    <div class="container hero__content">
+      <h3 class="hero__tagline">OFFICE STATIONERY SUPPLIES</h3>
+      <h1 class="hero__title">Your Guide to Quality<br /><span class="text-accent" id="typingText"></span></h1>
+      <p class="hero__subtitle">Equip your workspace with the right tools. From pens and notebooks to desk organisers and packaging — we help you find everything your office needs to stay productive and organised.</p>
+      <a href="#about" class="btn btn--primary">Learn More</a>
+      <button class="btn btn--outline quote-trigger">Request a Quote</button>
+    </div>
+  </section>
+
+  <!-- ============ STATS COUNTERS ============ -->
+  <section class="stats" id="stats">
+    <div class="container stats__grid">
+      <div class="stat">
+        <span class="stat__number" data-target="1200">0</span>+
+        <span class="stat__label">Products Available</span>
+      </div>
+      <div class="stat">
+        <span class="stat__number" data-target="350">0</span>+
+        <span class="stat__label">Happy Clients</span>
+      </div>
+      <div class="stat">
+        <span class="stat__number" data-target="15">0</span>+
+        <span class="stat__label">Years Experience</span>
+      </div>
+      <div class="stat">
+        <span class="stat__number" data-target="50">0</span>+
+        <span class="stat__label">Trusted Brands</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INTRO / ABOUT ============ -->
+  <section class="intro section reveal-section" data-reveal="left" id="about">
+    <div class="container intro__grid">
+      <div class="intro__text">
+        <h2 class="section__title">Office Stationery Supplies</h2>
+        <p>Office stationery is something that every business will need. A vital part of a company is the tools and equipment used to run and manage daily operations. Whether you're running a home office, a startup or a large enterprise — the right stationery makes all the difference.</p>
+        <p>At <strong>RLDS</strong>, we guide you in finding the best office supplies. Quality pens, premium paper, reliable packaging, planning tools and much more. Everything to keep your workspace efficient, organised, and inspiring.</p>
+        <p>Imagine a workspace where every item on your desk serves a purpose and brings you joy. That's what we're here to help you build — one supply at a time.</p>
+      </div>
+      <div class="intro__images">
+        <img src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?w=600&q=80" alt="Organised office desk with stationery" loading="lazy" />
+        <img src="https://images.unsplash.com/photo-1456735190827-d1262f71b8a3?w=600&q=80" alt="Colourful office supplies" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY CHOOSE US ============ -->
+  <section class="why-us section reveal-section" data-reveal="right" id="why-us">
+    <div class="container">
+      <h2 class="section__title center">Why Choose RLDS</h2>
+      <p class="section__desc center">We don't just sell supplies — we help you build a workspace that works for you.</p>
+      <div class="why-us__grid">
+        <div class="why-card">
+          <div class="why-card__icon">&#128666;</div>
+          <h3>Nationwide Delivery</h3>
+          <p>Fast, reliable delivery to every corner of South Africa — from Joburg to Cape Town and everywhere in between.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-card__icon">&#9733;</div>
+          <h3>Premium Quality</h3>
+          <p>We stock only trusted brands that deliver consistent quality. No cheap imitations, just supplies that last.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-card__icon">&#128176;</div>
+          <h3>Bulk Pricing</h3>
+          <p>Special discounts for businesses ordering in bulk. The more you order, the more you save.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-card__icon">&#128172;</div>
+          <h3>Dedicated Support</h3>
+          <p>Our friendly team is always ready to help you find exactly what your office needs. Personal service guaranteed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FIND SUPPLIES ============ -->
+  <section class="find-supplies section reveal-section" data-reveal="left" id="supplies">
+    <div class="container">
+      <h2 class="section__title center">Find Quality Office Supplies</h2>
+      <p class="section__desc center">Find the best office stationery that will help you fill your workspace with quality supplies. You'll be able to source everything from writing instruments to desk accessories and packaging materials. By choosing quality over quantity, you'll be investing in tools that last longer and work better for you and your team.</p>
+
+      <div class="supply-list">
+        <h3>Office Supplies List</h3>
+        <div class="supply-list__items">
+          <span>Writing &amp; Drawing</span>
+          <span>Paper &amp; Notebooks</span>
+          <span>Desk &amp; Organisation</span>
+          <span>Packaging Supplies</span>
+          <span>Calendar &amp; Planning</span>
+          <span>Printing &amp; Tech</span>
+          <span>Filing &amp; Storage</span>
+          <span>Cleaning Supplies</span>
+          <span>Office Furniture</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATIONERY SECTION ============ -->
+  <section class="content-block section reveal-section" data-reveal="right" id="stationery">
+    <div class="container content-block__grid">
+      <div class="content-block__image">
+        <img src="https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?w=600&q=80" alt="Pens and stationery items" loading="lazy" />
+      </div>
+      <div class="content-block__text">
+        <h2 class="section__title">Office Stationery Supplies</h2>
+        <p>Office stationery ranging from pens and pencils to calculators, paper and notebooks, and small office electronics. Find office stationery equipment that will make your desk a happier and more productive place to be.</p>
+        <p>Whether you need a reliable ballpoint for daily notes, a quality journal for meeting minutes, or a full set of highlighters for colour-coding your projects — we've got you covered with recommendations for every need and budget.</p>
+        <a href="stationery.html" class="btn btn--primary">Explore Stationery</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PACKAGING SECTION ============ -->
+  <section class="content-block content-block--alt section reveal-section" data-reveal="left" id="packaging">
+    <div class="container content-block__grid content-block__grid--reverse">
+      <div class="content-block__image">
+        <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=600&q=80" alt="Packaging supplies and boxes" loading="lazy" />
+      </div>
+      <div class="content-block__text">
+        <h2 class="section__title">Packaging Supplies</h2>
+        <p>Packaging and mailing supplies for your office. Find quality envelopes, tape, bubble wrap, boxes, and all the essentials for dispatch and storage. Whether your business is admin-related, retail, or professional services — you can find packaging supplies to suit your needs.</p>
+        <p>From everyday brown envelopes to premium branded packaging solutions, organise your dispatch area with reliable materials that protect your documents and products in transit.</p>
+        <a href="packaging.html" class="btn btn--primary">Find Packaging Supplies</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PLANNING SECTION ============ -->
+  <section class="content-block section reveal-section" data-reveal="right" id="planning">
+    <div class="container content-block__grid">
+      <div class="content-block__image">
+        <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=600&q=80" alt="Calendar and planning tools" loading="lazy" />
+      </div>
+      <div class="content-block__text">
+        <h2 class="section__title">Planning &amp; Organisation</h2>
+        <p>Stay on top of deadlines, meetings, and projects with quality planning tools. Wall calendars, desk planners, whiteboards, and scheduling accessories to keep your team aligned and productive throughout the year.</p>
+        <p>A well-planned workspace is an efficient workspace. Invest in planning tools that help you visualise your goals and track progress — from daily task lists to annual wall planners.</p>
+        <a href="planning.html" class="btn btn--primary">Explore Planning Tools</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DESK & ORGANISATION SECTION ============ -->
+  <section class="content-block content-block--alt section reveal-section" data-reveal="left">
+    <div class="container content-block__grid content-block__grid--reverse">
+      <div class="content-block__image">
+        <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?w=600&q=80" alt="Desk organisation accessories" loading="lazy" />
+      </div>
+      <div class="content-block__text">
+        <h2 class="section__title">Desk &amp; Organisation</h2>
+        <p>A tidy desk leads to a clear mind. Desk drawers, pen holders, file trays, document organisers, and accessories to keep everything in its place. Transform your workspace into an environment where productivity thrives.</p>
+        <p>From minimalist wooden organisers to full desk systems with multiple compartments — find the setup that suits your workflow and keeps clutter at bay.</p>
+        <a href="desk-organisation.html" class="btn btn--primary">Explore Desk Accessories</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OFFICE FURNITURE SECTION ============ -->
+  <section class="content-block section reveal-section" data-reveal="right">
+    <div class="container content-block__grid">
+      <div class="content-block__image">
+        <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=600&q=80" alt="Modern office furniture" loading="lazy" />
+      </div>
+      <div class="content-block__text">
+        <h2 class="section__title">Office Furniture</h2>
+        <p>Create a workspace that works for you. From ergonomic chairs and spacious desks to boardroom tables and reception counters — we supply quality office furniture for businesses of all sizes.</p>
+        <p>Whether you're setting up a home office or furnishing an entire corporate floor, our range covers everything from executive seating to steel filing cabinets and modern workstations.</p>
+        <a href="furniture.html" class="btn btn--primary">Explore Office Furniture</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BRAND LOGOS ============ -->
+  <section class="brands section">
+    <div class="container">
+      <h2 class="section__title center">Trusted Brands We Stock</h2>
+      <p class="section__desc center">We partner with leading stationery brands to bring you the best quality products.</p>
+      <div class="brands-carousel" id="brandsCarousel">
+        <button class="brands-carousel__btn brands-carousel__btn--prev" id="brandsPrev" aria-label="Previous brands">&#10094;</button>
+        <div class="brands-carousel__track-wrapper">
+          <div class="brands-carousel__track" id="brandsTrack">
+            <div class="brand-item"><img src="https://ui-avatars.com/api/?name=BIC&background=0d47a1&color=fff&size=96&font-size=0.45&bold=true&format=svg" alt="BIC" /><span>BIC</span></div>
+            <div class="brand-item"><img src="https://ui-avatars.com/api/?name=ST&background=003d7a&color=fff&size=96&font-size=0.45&bold=true&format=svg" alt="Staedtler" /><span>Staedtler</span></div>
+            <div class="brand-item"><img src="https://ui-avatars.com/api/?name=P&background=e30613&color=fff&size=96&font-size=0.5&bold=true&format=svg" alt="Pilot" /><span>Pilot</span></div>
+            <div class="brand-item"><img src="https://ui-avatars.com/api/?name=CX&background=1b5e20&color=fff&size=96&font-size=0.45&bold=true&format=svg" alt="Croxley" /><span>Croxley</span></div>
+            <div class="brand-item"><img src="https://ui-avatars.com/api/?name=PR&background=e65100&color=fff&size=96&font-size=0.45&bold=true&format=svg" alt="Pritt" /><span>Pritt</span></div>
+            <div class="brand-item"><img src="https://ui-avatars.com/api/?name=3M&background=cc0000&color=fff&size=96&font-size=0.45&bold=true&format=svg" alt="Scotch 3M" /><span>Scotch</span></div>
+            <div class="brand-item"><img src="https://ui-avatars.com/api/?name=M&background=00205b&color=fff&size=96&font-size=0.5&bold=true&format=svg" alt="Mondi" /><span>Mondi</span></div>
+            <div class="brand-item"><img src="https://ui-avatars.com/api/?name=TL&background=2e7d32&color=fff&size=96&font-size=0.45&bold=true&format=svg" alt="Treeline" /><span>Treeline</span></div>
+            <div class="brand-item"><img src="https://ui-avatars.com/api/?name=BX&background=283593&color=fff&size=96&font-size=0.45&bold=true&format=svg" alt="Bantex" /><span>Bantex</span></div>
+            <div class="brand-item"><img src="https://ui-avatars.com/api/?name=PE&background=4a148c&color=fff&size=96&font-size=0.45&bold=true&format=svg" alt="Pentel" /><span>Pentel</span></div>
+          </div>
+        </div>
+        <button class="brands-carousel__btn brands-carousel__btn--next" id="brandsNext" aria-label="Next brands">&#10095;</button>
+      </div>
+      <div class="brands-carousel__progress" id="brandsDots"></div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ACCORDION ============ -->
+  <section class="faq section reveal-section" data-reveal="right" id="faq">
+    <div class="container">
+      <h2 class="section__title center">Frequently Asked Questions</h2>
+      <p class="section__desc center">Got questions? We've got answers. Here are the most common things our clients ask.</p>
+      <div class="faq__list">
+        <div class="faq-item">
+          <button class="faq-item__question">
+            <span>Do you deliver nationwide?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <p>Yes! We deliver to all major cities and towns across South Africa including Johannesburg, Cape Town, Durban, Pretoria, and many more. Standard delivery takes 2-5 business days depending on your location.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__question">
+            <span>Do you offer bulk pricing for businesses?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <p>Absolutely! We offer special bulk pricing for businesses of all sizes. Contact our sales team with your requirements and we'll put together a custom quote for you.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__question">
+            <span>What brands do you stock?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <p>We stock over 50 trusted brands including BIC, Staedtler, Pilot, Croxley, Pritt, Scotch, Mondi, Treeline, Bantex, and many more. We're always adding new quality brands to our range.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__question">
+            <span>Can I become a supply partner?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <p>Yes! If you're a stationery brand or manufacturer, we'd love to hear from you. Use our contact form or email us directly to discuss partnership opportunities.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__question">
+            <span>What is your return policy?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <p>We offer a 30-day return policy on all unopened items in their original packaging. If you receive a defective product, we'll replace it at no extra charge. Contact our support team to initiate a return.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__question">
+            <span>How can I track my order?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <p>Once your order is dispatched, you'll receive an email with a tracking number and a link to track your delivery in real-time. You can also contact us directly for order status updates.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DELIVERY INFO ============ -->
+  <section class="delivery section">
+    <div class="container">
+      <h2 class="section__title center">We Deliver Nationwide</h2>
+      <p class="section__desc center">RLDS delivers throughout South Africa. Whether you're in a major city or a smaller town, we'll get your supplies to you.</p>
+      <div class="delivery__locations">
+        <span>Johannesburg</span>
+        <span>Pretoria</span>
+        <span>Cape Town</span>
+        <span>Durban</span>
+        <span>Sandton</span>
+        <span>Midrand</span>
+        <span>Centurion</span>
+        <span>Bloemfontein</span>
+        <span>Port Elizabeth</span>
+        <span>East London</span>
+        <span>Stellenbosch</span>
+        <span>Pietermaritzburg</span>
+        <span>Randburg</span>
+        <span>Roodepoort</span>
+        <span>Kempton Park</span>
+        <span>Boksburg</span>
+        <span>Germiston</span>
+        <span>Alberton</span>
+        <span>Knysna</span>
+        <span>Mpumalanga</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SOCIAL / FOLLOW ============ -->
+  <section class="social section">
+    <div class="container social__inner">
+      <div class="social__text">
+        <h2 class="section__title">Follow Us</h2>
+        <p>Stay connected and see our latest stationery picks, workspace tips, and special offers. Join our community of office enthusiasts who love quality supplies.</p>
+        <div class="social__links">
+          <a href="#" class="social__btn">Instagram</a>
+          <a href="#" class="social__btn">Facebook</a>
+          <a href="#" class="social__btn">LinkedIn</a>
+        </div>
+      </div>
+      <div class="social__cta">
+        <div class="membership-card">
+          <h3>Want to Partner With Us?</h3>
+          <p>Are you a stationery brand or supplier? Join our network and connect with offices across South Africa.</p>
+          <button class="btn btn--accent quote-trigger">Request a Quote</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NEWSLETTER ============ -->
+  <section class="newsletter section">
+    <div class="container newsletter__inner">
+      <h2>Stay Updated</h2>
+      <p>Connect with us. Sign up to receive updates on new supplies, workspace tips, and special offers.</p>
+      <form class="newsletter__form" id="newsletterForm">
+        <input type="email" placeholder="Your email address" required aria-label="Email address" />
+        <button type="submit" class="btn btn--primary">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact section" id="contact">
+    <div class="container contact__grid">
+      <div class="contact__info">
+        <h2 class="section__title">Get In Touch</h2>
+        <p>Have a question about our stationery range? Want to place a bulk order or become a supply partner? Drop us a message and our team will get back to you.</p>
+        <ul class="contact__details">
+          <li>
+            <span class="contact__icon">&#128205;</span>
+            <span>123 Main Street, Johannesburg, South Africa</span>
+          </li>
+          <li>
+            <span class="contact__icon">&#128222;</span>
+            <span>+27 11 234 5678</span>
+          </li>
+          <li>
+            <span class="contact__icon">&#9993;</span>
+            <span>hello@rlds.co.za</span>
+          </li>
+        </ul>
+      </div>
+      <form class="contact__form" id="contactForm">
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email Address" required />
+        <input type="text" placeholder="Subject" required />
+        <textarea rows="5" placeholder="Your message…" required></textarea>
+        <button type="submit" class="btn btn--primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#" class="navbar__logo">
+          <img src="RLDS Logo.svg" alt="Rialivhuwa Diversified Solutions" class="footer__logo-img" />
+        </a>
+        <p>Your guide to quality office stationery and supplies across South Africa.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="supplies.html">Supplies</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer__col">
+        <h4>Supplies</h4>
+        <a href="stationery.html">Stationery</a>
+        <a href="packaging.html">Packaging</a>
+        <a href="planning.html">Planning</a>
+        <a href="furniture.html">Office Furniture</a>
+      </div>
+      <div class="footer__col">
+        <h4>Connect</h4>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; 2026 Rialivhuwa Diversified Solutions. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ REQUEST A QUOTE MODAL ============ -->
+  <div class="modal-overlay" id="quoteModal" role="dialog" aria-modal="true" aria-labelledby="quoteModalTitle">
+    <div class="modal">
+      <button class="modal__close" id="quoteModalClose" aria-label="Close modal">&times;</button>
+      <h2 class="modal__title" id="quoteModalTitle">Request a Quote</h2>
+      <p class="modal__desc">Fill in your details and we'll get back to you with a custom quote for your office supply needs.</p>
+      <form class="modal__form" id="quoteForm">
+        <div class="modal__row">
+          <input type="text" placeholder="Full Name" required aria-label="Full name" />
+          <input type="email" placeholder="Email Address" required aria-label="Email address" />
+        </div>
+        <div class="modal__row">
+          <input type="tel" placeholder="Phone Number" aria-label="Phone number" />
+          <input type="text" placeholder="Company Name" aria-label="Company name" />
+        </div>
+        <textarea rows="4" placeholder="What supplies do you need? Include quantities if possible..." required aria-label="Quote details"></textarea>
+        <button type="submit" class="btn btn--primary">Submit Request</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">&#8679;</button>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/27112345678" target="_blank" rel="noopener noreferrer" class="whatsapp-btn" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 32 32" width="28" height="28" fill="#fff">
+      <path d="M16.004 0C7.164 0 .004 7.16.004 16c0 2.82.736 5.58 2.136 8.008L.004 32l8.196-2.108A15.93 15.93 0 0016.004 32C24.844 32 32 24.84 32 16S24.844 0 16.004 0zm0 29.12a13.08 13.08 0 01-6.86-1.932l-.492-.292-4.86 1.252 1.296-4.728-.324-.512A13.04 13.04 0 012.884 16c0-7.24 5.884-13.12 13.12-13.12 7.24 0 13.12 5.88 13.12 13.12s-5.88 13.12-13.12 13.12zm7.2-9.828c-.396-.2-2.34-1.152-2.704-1.284-.36-.132-.624-.2-.888.2-.264.396-1.02 1.284-1.248 1.548-.228.264-.46.3-.852.1-.396-.2-1.668-.616-3.18-1.96-1.176-1.044-1.968-2.336-2.2-2.732-.228-.396-.024-.612.172-.808.176-.176.396-.46.592-.692.2-.228.264-.396.396-.66.132-.264.068-.492-.032-.692-.1-.2-.888-2.14-1.22-2.932-.32-.768-.644-.664-.888-.676-.228-.012-.492-.016-.756-.016s-.692.1-1.052.492c-.36.396-1.38 1.348-1.38 3.288 0 1.94 1.412 3.816 1.612 4.08.2.264 2.784 4.252 6.744 5.96.944.408 1.68.652 2.256.832.948.3 1.812.26 2.492.156.76-.112 2.34-.956 2.672-1.876.328-.924.328-1.716.228-1.876-.1-.164-.36-.264-.756-.46z"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>

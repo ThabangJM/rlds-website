@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 120" width="480" height="120">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Inter:wght@400;600&amp;display=swap');
+    </style>
+  </defs>
+
+  <!-- Dark navy rounded square -->
+  <rect x="10" y="10" width="100" height="100" rx="16" ry="16" fill="#1B2A4A"/>
+
+  <!-- RDS text in gold -->
+  <text x="60" y="72" font-family="'Playfair Display', Georgia, serif" font-weight="700" font-size="38" fill="#C9A96E" text-anchor="middle" letter-spacing="2">RDS</text>
+
+  <!-- Rialivhuwa text -->
+  <text x="130" y="58" font-family="'Inter', 'Segoe UI', Arial, sans-serif" font-weight="600" font-size="34" fill="#1B2A4A" letter-spacing="0.5">Rialivhuwa</text>
+
+  <!-- Diversified Solutions text -->
+  <text x="131" y="84" font-family="'Inter', 'Segoe UI', Arial, sans-serif" font-weight="400" font-size="18" fill="#7A8A9E" letter-spacing="1">Diversified Solutions</text>
+</svg>

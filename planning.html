@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Planning &amp; Organisation — RLDS</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ============ PAGE LOADER ============ -->
+  <div class="page-loader" id="pageLoader" role="status" aria-label="Loading page">
+    <div class="loader-spinner"></div>
+    <img src="RLDS Logo.svg" alt="RLDS" class="loader-logo" />
+  </div>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar scrolled" id="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <img src="RLDS Logo.svg" alt="Rialivhuwa Diversified Solutions" class="navbar__logo-img" />
+      </a>
+      <nav class="navbar__links" id="navLinks" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="supplies.html">Supplies</a>
+        <a href="stationery.html">Stationery</a>
+        <a href="packaging.html">Packaging</a>
+        <a href="planning.html" class="active">Planning</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="index.html#contact" class="nav-quote-btn quote-trigger-link">Get Quote</a>
+      </nav>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ PAGE HERO BANNER ============ -->
+  <section class="page-hero">
+    <div class="page-hero__overlay"></div>
+    <div class="page-hero__bg" style="background-image: url('https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=1400&q=80')"></div>
+    <div class="container page-hero__content">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a> <span>/</span> <a href="supplies.html">Supplies</a> <span>/</span> <span>Planning</span>
+      </nav>
+      <h1>Planning &amp; Organisation</h1>
+      <p>Calendars, planners, whiteboards, and scheduling tools to keep your team on track.</p>
+    </div>
+  </section>
+
+  <!-- ============ INTRO ============ -->
+  <section class="detail-intro section">
+    <div class="container detail-intro__grid">
+      <div class="detail-intro__text">
+        <h2 class="section__title">Plan Better. Work Smarter.</h2>
+        <p>A productive office starts with good planning. When your team can see deadlines at a glance, track project milestones, and manage daily tasks effectively — everything runs more smoothly.</p>
+        <p>At <strong>RLDS</strong>, we supply a wide range of planning tools that help businesses stay organised year-round. From wall calendars that keep the whole team aligned to personal planners that help individuals manage their workload — we've got the tools you need.</p>
+        <p>Invest in planning supplies that help you visualise goals, track progress, and meet deadlines with confidence.</p>
+      </div>
+      <div class="detail-intro__image">
+        <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=600&q=80" alt="Calendar and planning tools" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRODUCT CATEGORIES ============ -->
+  <section class="detail-categories section" style="background: var(--neutral);">
+    <div class="container">
+      <h2 class="section__title center">Planning Categories</h2>
+      <p class="section__desc center">Equip your workspace with the scheduling and planning tools that suit your workflow.</p>
+
+      <div class="detail-grid">
+
+        <div class="detail-card">
+          <div class="detail-card__icon">&#128197;</div>
+          <h3>Wall Calendars</h3>
+          <p>Year-at-a-glance calendars, monthly wall planners, and academic calendars to keep your entire team synchronised.</p>
+          <ul>
+            <li>Year Planners (January–December)</li>
+            <li>Monthly Wall Calendars</li>
+            <li>Academic Year Calendars</li>
+            <li>Laminated Reusable Planners</li>
+            <li>Custom Branded Calendars (On Request)</li>
+            <li>Wall Planner Accessories (Stickers, Markers)</li>
+          </ul>
+        </div>
+
+        <div class="detail-card">
+          <div class="detail-card__icon">&#128213;</div>
+          <h3>Desk Planners &amp; Diaries</h3>
+          <p>Daily, weekly, and monthly desk planners to help individuals manage tasks, meetings, and deadlines.</p>
+          <ul>
+            <li>A4 &amp; A5 Daily Diaries</li>
+            <li>Weekly Desk Planners</li>
+            <li>Monthly Desk Pads</li>
+            <li>Executive Leather-Bound Diaries</li>
+            <li>Academic Diaries</li>
+            <li>Desk Calendar Stands</li>
+          </ul>
+        </div>
+
+        <div class="detail-card">
+          <div class="detail-card__icon">&#128203;</div>
+          <h3>Whiteboards &amp; Noticeboards</h3>
+          <p>Magnetic whiteboards, cork boards, and combination boards for brainstorming, scheduling, and team communication.</p>
+          <ul>
+            <li>Magnetic Whiteboards (Various Sizes)</li>
+            <li>Cork Noticeboards</li>
+            <li>Combination Boards (Cork + Whiteboard)</li>
+            <li>Glass Whiteboards</li>
+            <li>Whiteboard Markers &amp; Erasers</li>
+            <li>Mounting Hardware &amp; Stands</li>
+          </ul>
+        </div>
+
+        <div class="detail-card">
+          <div class="detail-card__icon">&#128221;</div>
+          <h3>To-Do Lists &amp; Task Pads</h3>
+          <p>Tear-off task lists, sticky note pads, and project tracking sheets for daily productivity.</p>
+          <ul>
+            <li>Daily To-Do List Pads</li>
+            <li>Priority Task Planners</li>
+            <li>Sticky Notes (Various Sizes &amp; Colours)</li>
+            <li>Meeting Notes Pads</li>
+            <li>Project Tracking Sheets</li>
+            <li>Checklist Notepads</li>
+          </ul>
+        </div>
+
+        <div class="detail-card">
+          <div class="detail-card__icon">&#128336;</div>
+          <h3>Time Management Tools</h3>
+          <p>Desk clocks, timer cubes, and Pomodoro tools to help manage focus time and breaks effectively.</p>
+          <ul>
+            <li>Desk Clocks (Digital &amp; Analogue)</li>
+            <li>Timer Cubes</li>
+            <li>Hourglass Sand Timers</li>
+            <li>Wall Clocks for Offices</li>
+            <li>Meeting Room Clocks</li>
+            <li>Time Zone Display Clocks</li>
+          </ul>
+        </div>
+
+        <div class="detail-card">
+          <div class="detail-card__icon">&#128204;</div>
+          <h3>Pins, Magnets &amp; Accessories</h3>
+          <p>Push pins, fridge magnets, board accessories, and all the extras you need to make your planning boards work.</p>
+          <ul>
+            <li>Push Pins (Colour-Coded)</li>
+            <li>Magnetic Clips &amp; Holders</li>
+            <li>Whiteboard Magnets</li>
+            <li>Planning Board Stickers</li>
+            <li>Dry-Erase Markers (Fine &amp; Broad Tip)</li>
+            <li>Board Erasers &amp; Cleaning Spray</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="detail-cta section">
+    <div class="container detail-cta__inner">
+      <h2>Ready to Get Organised?</h2>
+      <p>From personal planners to boardroom whiteboards — tell us what you need and we'll deliver it to your door.</p>
+      <div class="detail-cta__buttons">
+        <a href="index.html#contact" class="btn btn--primary">Get a Quote</a>
+        <a href="supplies.html" class="btn btn--outline-dark">View All Supplies</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" class="navbar__logo">
+          <img src="RLDS Logo.svg" alt="Rialivhuwa Diversified Solutions" class="footer__logo-img" />
+        </a>
+        <p>Your guide to quality office stationery and supplies across South Africa.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="supplies.html">Supplies</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+      <div class="footer__col">
+        <h4>Supplies</h4>
+        <a href="stationery.html">Stationery</a>
+        <a href="packaging.html">Packaging</a>
+        <a href="planning.html">Planning</a>
+        <a href="furniture.html">Office Furniture</a>
+      </div>
+      <div class="footer__col">
+        <h4>Connect</h4>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; 2026 Rialivhuwa Diversified Solutions. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">&#8679;</button>
+
+  <a href="https://wa.me/27112345678" target="_blank" rel="noopener noreferrer" class="whatsapp-btn" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 32 32" width="28" height="28" fill="#fff">
+      <path d="M16.004 0C7.164 0 .004 7.16.004 16c0 2.82.736 5.58 2.136 8.008L.004 32l8.196-2.108A15.93 15.93 0 0016.004 32C24.844 32 32 24.84 32 16S24.844 0 16.004 0zm0 29.12a13.08 13.08 0 01-6.86-1.932l-.492-.292-4.86 1.252 1.296-4.728-.324-.512A13.04 13.04 0 012.884 16c0-7.24 5.884-13.12 13.12-13.12 7.24 0 13.12 5.88 13.12 13.12s-5.88 13.12-13.12 13.12zm7.2-9.828c-.396-.2-2.34-1.152-2.704-1.284-.36-.132-.624-.2-.888.2-.264.396-1.02 1.284-1.248 1.548-.228.264-.46.3-.852.1-.396-.2-1.668-.616-3.18-1.96-1.176-1.044-1.968-2.336-2.2-2.732-.228-.396-.024-.612.172-.808.176-.176.396-.46.592-.692.2-.228.264-.396.396-.66.132-.264.068-.492-.032-.692-.1-.2-.888-2.14-1.22-2.932-.32-.768-.644-.664-.888-.676-.228-.012-.492-.016-.756-.016s-.692.1-1.052.492c-.36.396-1.38 1.348-1.38 3.288 0 1.94 1.412 3.816 1.612 4.08.2.264 2.784 4.252 6.744 5.96.944.408 1.68.652 2.256.832.948.3 1.812.26 2.492.156.76-.112 2.34-.956 2.672-1.876.328-.924.328-1.716.228-1.876-.1-.164-.36-.264-.756-.46z"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>

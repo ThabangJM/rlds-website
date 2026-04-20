@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Desk &amp; Organisation — RLDS</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ============ PAGE LOADER ============ -->
+  <div class="page-loader" id="pageLoader" role="status" aria-label="Loading page">
+    <div class="loader-spinner"></div>
+    <img src="RLDS Logo.svg" alt="RLDS" class="loader-logo" />
+  </div>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar scrolled" id="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <img src="RLDS Logo.svg" alt="Rialivhuwa Diversified Solutions" class="navbar__logo-img" />
+      </a>
+      <nav class="navbar__links" id="navLinks" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="supplies.html">Supplies</a>
+        <a href="stationery.html">Stationery</a>
+        <a href="packaging.html">Packaging</a>
+        <a href="planning.html">Planning</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="index.html#contact" class="nav-quote-btn quote-trigger-link">Get Quote</a>
+      </nav>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ PAGE HERO BANNER ============ -->
+  <section class="page-hero">
+    <div class="page-hero__overlay"></div>
+    <div class="page-hero__bg" style="background-image: url('https://images.unsplash.com/photo-1544816155-12df9643f363?w=1400&q=80')"></div>
+    <div class="container page-hero__content">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a> <span>/</span> <a href="supplies.html">Supplies</a> <span>/</span> <span>Desk &amp; Organisation</span>
+      </nav>
+      <h1>Desk &amp; Organisation</h1>
+      <p>Transform your workspace with organisers, trays, holders, and accessories that boost productivity.</p>
+    </div>
+  </section>
+
+  <!-- ============ INTRO ============ -->
+  <section class="detail-intro section">
+    <div class="container detail-intro__grid">
+      <div class="detail-intro__text">
+        <h2 class="section__title">A Tidy Desk. A Clear Mind.</h2>
+        <p>An organised workspace is a productive workspace. When everything has its place — from pens to paperwork — you spend less time searching and more time doing meaningful work.</p>
+        <p>At <strong>RLDS</strong>, we supply a curated range of desk organisation products designed to transform cluttered workspaces into efficient, inspiring environments. Whether you need a simple pen holder or a complete desk system, we have options to suit every style and budget.</p>
+        <p>Create a workspace that works as hard as you do. Invest in desk accessories that reduce clutter, improve workflow, and make your office a place you enjoy being in.</p>
+      </div>
+      <div class="detail-intro__image">
+        <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?w=600&q=80" alt="Desk organisation accessories" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRODUCT CATEGORIES ============ -->
+  <section class="detail-categories section" style="background: var(--neutral);">
+    <div class="container">
+      <h2 class="section__title center">Desk Organisation Categories</h2>
+      <p class="section__desc center">From pen holders to full desk systems — find everything you need to declutter your workspace.</p>
+
+      <div class="detail-grid">
+
+        <div class="detail-card">
+          <div class="detail-card__icon">&#128394;</div>
+          <h3>Pen Holders &amp; Desk Caddies</h3>
+          <p>Keep your writing instruments organised and within reach with stylish pen holders, cup organisers, and rotating desk caddies.</p>
+          <ul>
+            <li>Single &amp; Multi-Compartment Pen Holders</li>
+            <li>Rotating Desk Caddies</li>
+            <li>Mesh Metal Organisers</li>
+            <li>Wooden Desk Holders</li>
+            <li>Acrylic Modern Holders</li>
+            <li>Desk Cup Organisers</li>
+          </ul>
+        </div>
+
+        <div class="detail-card">
+          <div class="detail-card__icon">&#128451;</div>
+          <h3>Document Trays &amp; File Racks</h3>
+          <p>Stackable document trays, letter racks, and vertical file holders for managing incoming and outgoing paperwork.</p>
+          <ul>
+            <li>Stackable Letter Trays (3-Tier / 5-Tier)</li>
+            <li>Vertical File Holders</li>
+            <li>Magazine Racks</li>
+            <li>Desktop File Sorters</li>
+            <li>Mesh &amp; Plastic Tray Options</li>
+            <li>Colour-Coded Filing Trays</li>
+          </ul>
+        </div>
+
+        <div class="detail-card">
+          <div class="detail-card__icon">&#128452;</div>
+          <h3>Drawer Organisers</h3>
+          <p>Compartmentalised drawer inserts and trays to keep small items sorted and accessible inside desk drawers.</p>
+          <ul>
+            <li>Adjustable Drawer Dividers</li>
+            <li>Multi-Compartment Inserts</li>
+            <li>Paper Clip &amp; Staple Trays</li>
+            <li>Desk Drawer Toolboxes</li>
+            <li>Felt-Lined Organisers</li>
+            <li>Small Parts Storage Boxes</li>
+          </ul>
+        </div>
+
+        <div class="detail-card">
+          <div class="detail-card__icon">&#128187;</div>
+          <h3>Monitor Stands &amp; Risers</h3>
+          <p>Elevate your monitor to ergonomic height while creating storage space underneath. Good for posture and productivity.</p>
+          <ul>
+            <li>Wooden Monitor Stands</li>
+            <li>Adjustable Height Risers</li>
+            <li>Monitor Stands with Drawers</li>
+            <li>Laptop Stands</li>
+            <li>Dual Monitor Arms</li>
+            <li>Cable Management Trays</li>
+          </ul>
+        </div>
+
+        <div class="detail-card">
+          <div class="detail-card__icon">&#128220;</div>
+          <h3>Desktop Shelves &amp; Racks</h3>
+          <p>Small shelving units, book racks, and tiered organisers that sit on or above your desk to maximise vertical space.</p>
+          <ul>
+            <li>2-Tier Desktop Shelves</li>
+            <li>Book &amp; Binder Racks</li>
+            <li>Over-Desk Organisers</li>
+            <li>Floating Shelf Kits</li>
+            <li>Corner Desk Shelves</li>
+            <li>Expandable Desktop Units</li>
+          </ul>
+        </div>
+
+        <div class="detail-card">
+          <div class="detail-card__icon">&#128161;</div>
+          <h3>Desk Accessories</h3>
+          <p>Desk pads, mouse pads, cable organisers, and decorative items that complete your workspace setup.</p>
+          <ul>
+            <li>Leather &amp; Felt Desk Pads</li>
+            <li>Extended Mouse Pads</li>
+            <li>Cable Clips &amp; Organisers</li>
+            <li>Desk Plants &amp; Pots</li>
+            <li>Coaster Sets</li>
+            <li>Nameplate Holders</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="detail-cta section">
+    <div class="container detail-cta__inner">
+      <h2>Ready to Organise Your Workspace?</h2>
+      <p>From a single pen holder to a complete desk overhaul — we'll help you create a workspace that works. Get a quote today.</p>
+      <div class="detail-cta__buttons">
+        <a href="index.html#contact" class="btn btn--primary">Get a Quote</a>
+        <a href="supplies.html" class="btn btn--outline-dark">View All Supplies</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" class="navbar__logo">
+          <img src="RLDS Logo.svg" alt="Rialivhuwa Diversified Solutions" class="footer__logo-img" />
+        </a>
+        <p>Your guide to quality office stationery and supplies across South Africa.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="supplies.html">Supplies</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+      <div class="footer__col">
+        <h4>Supplies</h4>
+        <a href="stationery.html">Stationery</a>
+        <a href="packaging.html">Packaging</a>
+        <a href="planning.html">Planning</a>
+        <a href="furniture.html">Office Furniture</a>
+      </div>
+      <div class="footer__col">
+        <h4>Connect</h4>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; 2026 Rialivhuwa Diversified Solutions. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">&#8679;</button>
+
+  <a href="https://wa.me/27112345678" target="_blank" rel="noopener noreferrer" class="whatsapp-btn" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 32 32" width="28" height="28" fill="#fff">
+      <path d="M16.004 0C7.164 0 .004 7.16.004 16c0 2.82.736 5.58 2.136 8.008L.004 32l8.196-2.108A15.93 15.93 0 0016.004 32C24.844 32 32 24.84 32 16S24.844 0 16.004 0zm0 29.12a13.08 13.08 0 01-6.86-1.932l-.492-.292-4.86 1.252 1.296-4.728-.324-.512A13.04 13.04 0 012.884 16c0-7.24 5.884-13.12 13.12-13.12 7.24 0 13.12 5.88 13.12 13.12s-5.88 13.12-13.12 13.12zm7.2-9.828c-.396-.2-2.34-1.152-2.704-1.284-.36-.132-.624-.2-.888.2-.264.396-1.02 1.284-1.248 1.548-.228.264-.46.3-.852.1-.396-.2-1.668-.616-3.18-1.96-1.176-1.044-1.968-2.336-2.2-2.732-.228-.396-.024-.612.172-.808.176-.176.396-.46.592-.692.2-.228.264-.396.396-.66.132-.264.068-.492-.032-.692-.1-.2-.888-2.14-1.22-2.932-.32-.768-.644-.664-.888-.676-.228-.012-.492-.016-.756-.016s-.692.1-1.052.492c-.36.396-1.38 1.348-1.38 3.288 0 1.94 1.412 3.816 1.612 4.08.2.264 2.784 4.252 6.744 5.96.944.408 1.68.652 2.256.832.948.3 1.812.26 2.492.156.76-.112 2.34-.956 2.672-1.876.328-.924.328-1.716.228-1.876-.1-.164-.36-.264-.756-.46z"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
