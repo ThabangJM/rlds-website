@@ -123,8 +123,10 @@ a {
 .loader-logo {
   height: 120px;
   width: auto;
+  max-width: 80%;
   object-fit: contain;
   border-radius: 8px;
+  margin: 0 auto;
 }
 
 .loader-spinner {
@@ -359,6 +361,13 @@ a {
   max-width: 600px;
   margin: 0 auto 40px;
   line-height: 1.8;
+}
+
+.hero__buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 /* ---------- STATS ---------- */
