@@ -400,11 +400,14 @@
           </li>
         </ul>
       </div>
-      <form class="contact__form" id="contactForm">
-        <input type="text" placeholder="Full Name" required />
-        <input type="email" placeholder="Email Address" required />
-        <input type="text" placeholder="Subject" required />
-        <textarea rows="5" placeholder="Your message…" required></textarea>
+      <form class="contact__form" id="contactForm" action="https://formsubmit.co/info@rlds.co.za" method="POST">
+        <input type="hidden" name="_subject" value="New message from RLDS website">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://thabangjm.github.io/rlds-website/index.html#contact">
+        <input type="text" name="name" placeholder="Full Name" required />
+        <input type="email" name="email" placeholder="Email Address" required />
+        <input type="text" name="subject" placeholder="Subject" required />
+        <textarea rows="5" name="message" placeholder="Your message…" required></textarea>
         <button type="submit" class="btn btn--primary">Send Message</button>
       </form>
     </div>

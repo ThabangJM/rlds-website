@@ -394,11 +394,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /* ==== CONTACT FORM ==== */
-  document.getElementById('contactForm').addEventListener('submit', e => {
-    e.preventDefault();
-    alert('Thank you for your message! We\'ll get back to you soon.');
-    e.target.reset();
-  });
+  // Form now submits via FormSubmit.co — no JS override needed
 
   /* ==== SECTION REVEAL (Slide-in Left/Right) ==== */
   const revealSections = document.querySelectorAll('.reveal-section');
