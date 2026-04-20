@@ -528,7 +528,13 @@ a {
   font-size: .9rem;
   font-weight: 500;
   transition: var(--transition);
-  cursor: default;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.supply-list__items a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .supply-list__items span:hover {
