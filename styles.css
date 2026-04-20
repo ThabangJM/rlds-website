@@ -1555,6 +1555,370 @@ textarea:focus-visible {
   .intro__images img:last-child {
     height: 200px;
   }
+
+  .brands-carousel__btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .brand-item {
+    min-width: 110px;
+    padding: 16px 18px;
+    gap: 8px;
+  }
+
+  .brand-item img {
+    width: 44px;
+    height: 44px;
+  }
+
+  .brand-item span {
+    font-size: .82rem;
+  }
+
+  .brands-carousel__track {
+    gap: 14px;
+  }
+
+  .supply-list__items span {
+    padding: 8px 16px;
+    font-size: .82rem;
+  }
+
+  .btn {
+    padding: 12px 28px;
+    font-size: .88rem;
+  }
+
+  .contact__form input,
+  .contact__form textarea {
+    padding: 12px 16px;
+    font-size: .9rem;
+  }
+}
+
+/* ---------- SMALL PHONES (4-inch / 320px) ---------- */
+@media (max-width: 360px) {
+  .container {
+    width: 92%;
+  }
+
+  .section {
+    padding: 44px 0;
+  }
+
+  .section__title {
+    font-size: clamp(1.3rem, 6vw, 1.8rem);
+    margin-bottom: 14px;
+  }
+
+  .section__desc {
+    font-size: .92rem;
+    margin-bottom: 28px;
+  }
+
+  /* Navbar */
+  .navbar__logo-img {
+    height: 52px;
+  }
+
+  .navbar__links {
+    width: 240px;
+    padding: 80px 28px 28px;
+    gap: 20px;
+  }
+
+  .navbar__links a {
+    font-size: .85rem;
+  }
+
+  .nav-quote-btn {
+    padding: 7px 16px;
+    font-size: .8rem !important;
+  }
+
+  /* Hero */
+  .hero {
+    min-height: 85vh;
+  }
+
+  .hero__tagline {
+    font-size: .7rem;
+    letter-spacing: 2px;
+    margin-bottom: 14px;
+  }
+
+  .hero__title {
+    font-size: clamp(1.5rem, 7vw, 2rem);
+    min-height: 2em;
+  }
+
+  .hero__subtitle {
+    font-size: .9rem;
+    margin-bottom: 28px;
+  }
+
+  .hero__content .btn {
+    padding: 11px 24px;
+    font-size: .84rem;
+  }
+
+  /* Stats */
+  .stats {
+    padding: 36px 0;
+  }
+
+  .stats__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .stat__number {
+    font-size: 1.8rem;
+  }
+
+  .stat__label {
+    font-size: .78rem;
+  }
+
+  /* Intro */
+  .intro__text p {
+    font-size: .92rem;
+  }
+
+  .intro__images img:first-child,
+  .intro__images img:last-child {
+    height: 160px;
+  }
+
+  /* Why us */
+  .why-us__grid {
+    gap: 16px;
+  }
+
+  .why-card {
+    padding: 24px 18px;
+  }
+
+  .why-card__icon {
+    font-size: 2rem;
+  }
+
+  .why-card h3 {
+    font-size: 1.05rem;
+  }
+
+  .why-card p {
+    font-size: .84rem;
+  }
+
+  /* Supply list tags */
+  .supply-list {
+    padding: 20px 14px;
+  }
+
+  .supply-list h3 {
+    font-size: 1.15rem;
+  }
+
+  .supply-list__items {
+    gap: 8px;
+  }
+
+  .supply-list__items span {
+    padding: 7px 14px;
+    font-size: .78rem;
+  }
+
+  /* Content blocks */
+  .content-block__text p {
+    font-size: .92rem;
+  }
+
+  .content-block__image img {
+    height: 200px;
+  }
+
+  /* Brands carousel */
+  .brands-carousel {
+    gap: 8px;
+    margin-top: 28px;
+  }
+
+  .brands-carousel__btn {
+    width: 34px;
+    height: 34px;
+    font-size: .9rem;
+  }
+
+  .brand-item {
+    min-width: 95px;
+    padding: 12px 14px;
+    gap: 6px;
+  }
+
+  .brand-item img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .brand-item span {
+    font-size: .75rem;
+  }
+
+  .brands-carousel__track {
+    gap: 10px;
+  }
+
+  .brands-carousel__dot {
+    width: 8px;
+    height: 8px;
+  }
+
+  .brands-carousel__dot.active {
+    width: 24px;
+  }
+
+  .brands-carousel__progress {
+    gap: 6px;
+    margin-top: 18px;
+  }
+
+  /* FAQ */
+  .faq-item__question {
+    font-size: .92rem;
+    padding: 16px 0;
+  }
+
+  .faq-item__answer p {
+    font-size: .88rem;
+  }
+
+  /* Delivery */
+  .delivery__locations span {
+    padding: 6px 14px;
+    font-size: .78rem;
+  }
+
+  /* Social */
+  .social__btn {
+    padding: 10px 20px;
+    font-size: .82rem;
+  }
+
+  .membership-card {
+    padding: 28px 20px;
+  }
+
+  .membership-card h3 {
+    font-size: 1.2rem;
+  }
+
+  /* Newsletter */
+  .newsletter__inner h2 {
+    font-size: 1.5rem;
+  }
+
+  .newsletter__form input {
+    width: 100%;
+    padding: 12px 18px;
+    font-size: .88rem;
+  }
+
+  /* Contact */
+  .contact__info p {
+    font-size: .92rem;
+  }
+
+  .contact__details li {
+    font-size: .88rem;
+    gap: 8px;
+  }
+
+  .contact__form input,
+  .contact__form textarea {
+    padding: 11px 14px;
+    font-size: .88rem;
+  }
+
+  /* Footer */
+  .footer {
+    padding-top: 40px;
+  }
+
+  .footer__logo-img {
+    height: 60px;
+  }
+
+  .footer__brand p {
+    font-size: .82rem;
+  }
+
+  .footer__col h4 {
+    font-size: .92rem;
+    margin-bottom: 12px;
+  }
+
+  .footer__col a {
+    font-size: .82rem;
+    margin-bottom: 8px;
+  }
+
+  /* Buttons */
+  .btn {
+    padding: 10px 22px;
+    font-size: .84rem;
+  }
+
+  /* WhatsApp & Back to top */
+  .whatsapp-btn {
+    width: 48px;
+    height: 48px;
+    right: 16px;
+    bottom: 20px;
+  }
+
+  .whatsapp-btn svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .back-to-top {
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+    right: 16px;
+    bottom: 78px;
+  }
+
+  /* Modal */
+  .modal-overlay {
+    padding: 12px;
+  }
+
+  .modal {
+    padding: 28px 20px;
+  }
+
+  .modal__title {
+    font-size: 1.3rem;
+  }
+
+  .modal__desc {
+    font-size: .88rem;
+    margin-bottom: 20px;
+  }
+
+  .modal__row {
+    grid-template-columns: 1fr;
+  }
+
+  .modal__form input,
+  .modal__form textarea {
+    padding: 11px 14px;
+    font-size: .88rem;
+  }
 }
 
 /* ================================================
@@ -1977,5 +2341,185 @@ textarea:focus-visible {
 
   .detail-brands__grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .page-hero {
+    min-height: 220px;
+    padding: 80px 0 28px;
+  }
+
+  .page-hero__content h1 {
+    font-size: clamp(1.4rem, 6vw, 2rem);
+  }
+
+  .page-hero__content p {
+    font-size: .9rem;
+  }
+
+  .breadcrumb {
+    font-size: .78rem;
+    gap: 5px;
+  }
+
+  .detail-card {
+    padding: 24px 20px;
+  }
+
+  .detail-card h3 {
+    font-size: 1.05rem;
+  }
+
+  .detail-card p,
+  .detail-card ul li {
+    font-size: .84rem;
+  }
+
+  .detail-intro__image img {
+    height: 200px;
+  }
+
+  .detail-brands__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .detail-brand {
+    padding: 16px 12px;
+  }
+
+  .detail-brand strong {
+    font-size: .95rem;
+  }
+
+  .detail-brand span {
+    font-size: .76rem;
+  }
+
+  .detail-features__grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .detail-cta__inner h2 {
+    font-size: clamp(1.3rem, 5vw, 1.8rem);
+  }
+
+  .detail-cta__inner p {
+    font-size: .9rem;
+  }
+
+  .detail-cta__buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .supply-overview-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .supply-overview-card {
+    padding: 20px 18px;
+  }
+
+  .supply-category-card__content {
+    padding: 20px 16px;
+  }
+
+  .supply-category-card__content h3 {
+    font-size: 1.05rem;
+  }
+
+  .supply-category-card__content p {
+    font-size: .84rem;
+  }
+
+  .supply-category-card__image img {
+    height: 150px;
+  }
+}
+
+@media (max-width: 360px) {
+  .page-hero {
+    min-height: 180px;
+    padding: 70px 0 22px;
+  }
+
+  .page-hero__content h1 {
+    font-size: clamp(1.2rem, 6vw, 1.6rem);
+  }
+
+  .page-hero__content p {
+    font-size: .84rem;
+  }
+
+  .detail-card {
+    padding: 20px 16px;
+  }
+
+  .detail-card__icon {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+
+  .detail-card h3 {
+    font-size: 1rem;
+  }
+
+  .detail-card p {
+    font-size: .82rem;
+  }
+
+  .detail-card ul li {
+    font-size: .8rem;
+    padding: 5px 0 5px 16px;
+  }
+
+  .detail-intro__image img {
+    height: 160px;
+  }
+
+  .detail-intro__text p {
+    font-size: .88rem;
+  }
+
+  .detail-brands__grid {
+    gap: 8px;
+  }
+
+  .detail-brand {
+    padding: 14px 10px;
+  }
+
+  .detail-brand strong {
+    font-size: .88rem;
+  }
+
+  .detail-brand span {
+    font-size: .72rem;
+  }
+
+  .detail-cta__buttons .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .supply-overview-card h4 {
+    font-size: .95rem;
+  }
+
+  .supply-overview-card ul li {
+    font-size: .82rem;
+  }
+
+  .supply-category-card__content {
+    padding: 16px 14px;
+  }
+
+  .supply-category-card__image img {
+    height: 130px;
+    min-height: 130px;
   }
 }
