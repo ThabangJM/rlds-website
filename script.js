@@ -26,54 +26,58 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ==== PARALLAX HERO ==== */
   const heroParallax = document.getElementById('heroParallax');
-  function updateParallax() {
-    const scrollY = window.scrollY;
-    if (scrollY < window.innerHeight) {
-      heroParallax.style.transform = `translateY(${scrollY * 0.4}px)`;
+  if (heroParallax) {
+    function updateParallax() {
+      const scrollY = window.scrollY;
+      if (scrollY < window.innerHeight) {
+        heroParallax.style.transform = `translateY(${scrollY * 0.4}px)`;
+      }
     }
+    window.addEventListener('scroll', updateParallax);
   }
-  window.addEventListener('scroll', updateParallax);
 
   /* ==== TYPING EFFECT ==== */
   const typingEl = document.getElementById('typingText');
-  const phrases = ['Office Stationery', 'Packaging Supplies', 'Desk Organisation', 'Planning Tools', 'Writing Instruments'];
-  let phraseIndex = 0;
-  let charIndex = 0;
-  let isDeleting = false;
-  let typingSpeed = 100;
+  if (typingEl) {
+    const phrases = ['Office Stationery', 'Packaging Supplies', 'Desk Organisation', 'Planning Tools', 'Writing Instruments'];
+    let phraseIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    let typingSpeed = 100;
 
-  // Add cursor element
-  const cursor = document.createElement('span');
-  cursor.className = 'typing-cursor';
-  typingEl.parentNode.insertBefore(cursor, typingEl.nextSibling);
+    // Add cursor element
+    const cursor = document.createElement('span');
+    cursor.className = 'typing-cursor';
+    typingEl.parentNode.insertBefore(cursor, typingEl.nextSibling);
 
-  function type() {
-    const currentPhrase = phrases[phraseIndex];
+    function type() {
+      const currentPhrase = phrases[phraseIndex];
 
-    if (!isDeleting) {
-      typingEl.textContent = currentPhrase.substring(0, charIndex + 1);
-      charIndex++;
-      typingSpeed = 80;
+      if (!isDeleting) {
+        typingEl.textContent = currentPhrase.substring(0, charIndex + 1);
+        charIndex++;
+        typingSpeed = 80;
 
-      if (charIndex === currentPhrase.length) {
-        isDeleting = true;
-        typingSpeed = 2000; // pause before deleting
+        if (charIndex === currentPhrase.length) {
+          isDeleting = true;
+          typingSpeed = 2000; // pause before deleting
+        }
+      } else {
+        typingEl.textContent = currentPhrase.substring(0, charIndex - 1);
+        charIndex--;
+        typingSpeed = 50;
+
+        if (charIndex === 0) {
+          isDeleting = false;
+          phraseIndex = (phraseIndex + 1) % phrases.length;
+          typingSpeed = 400; // pause before typing next
+        }
       }
-    } else {
-      typingEl.textContent = currentPhrase.substring(0, charIndex - 1);
-      charIndex--;
-      typingSpeed = 50;
 
-      if (charIndex === 0) {
-        isDeleting = false;
-        phraseIndex = (phraseIndex + 1) % phrases.length;
-        typingSpeed = 400; // pause before typing next
-      }
+      setTimeout(type, typingSpeed);
     }
-
-    setTimeout(type, typingSpeed);
+    type();
   }
-  type();
 
   /* ==== NAVBAR SCROLL ==== */
   const navbar = document.getElementById('navbar');
@@ -81,30 +85,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.addEventListener('scroll', () => {
     const scrollY = window.scrollY;
-    navbar.classList.toggle('scrolled', scrollY > 60);
-    backToTop.classList.toggle('visible', scrollY > 600);
+    if (navbar) navbar.classList.toggle('scrolled', scrollY > 60);
+    if (backToTop) backToTop.classList.toggle('visible', scrollY > 600);
   });
 
   /* ==== MOBILE NAV TOGGLE ==== */
   const navToggle = document.getElementById('navToggle');
   const navLinks = document.getElementById('navLinks');
 
-  navToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('open');
-    navToggle.classList.toggle('active');
-  });
-
-  navLinks.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      navLinks.classList.remove('open');
-      navToggle.classList.remove('active');
+  if (navToggle && navLinks) {
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      navToggle.classList.toggle('active');
     });
-  });
+
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        navToggle.classList.remove('active');
+      });
+    });
+  }
 
   /* ==== BACK TO TOP ==== */
-  backToTop.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
+  if (backToTop) {
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
 
   /* ==== ANIMATED STAT COUNTERS ==== */
   function animateCounters() {
@@ -125,14 +133,16 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   const statsSection = document.querySelector('.stats');
-  let statsCounted = false;
-  const statsObserver = new IntersectionObserver(entries => {
-    if (entries[0].isIntersecting && !statsCounted) {
-      statsCounted = true;
-      animateCounters();
-    }
-  }, { threshold: 0.4 });
-  statsObserver.observe(statsSection);
+  if (statsSection) {
+    let statsCounted = false;
+    const statsObserver = new IntersectionObserver(entries => {
+      if (entries[0].isIntersecting && !statsCounted) {
+        statsCounted = true;
+        animateCounters();
+      }
+    }, { threshold: 0.4 });
+    statsObserver.observe(statsSection);
+  }
 
   /* ==== SCROLL FADE-IN ANIMATION ==== */
   const fadeElements = document.querySelectorAll(
@@ -386,12 +396,15 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /* ==== NEWSLETTER FORM ==== */
-  document.getElementById('newsletterForm').addEventListener('submit', e => {
-    e.preventDefault();
-    const input = e.target.querySelector('input');
-    alert(`Thanks for subscribing with ${input.value}! We'll keep you updated.`);
-    input.value = '';
-  });
+  const newsletterForm = document.getElementById('newsletterForm');
+  if (newsletterForm) {
+    newsletterForm.addEventListener('submit', e => {
+      e.preventDefault();
+      const input = e.target.querySelector('input');
+      alert(`Thanks for subscribing with ${input.value}! We'll keep you updated.`);
+      input.value = '';
+    });
+  }
 
   /* ==== CONTACT FORM ==== */
   // Form now submits via FormSubmit.co — no JS override needed
@@ -414,47 +427,48 @@ document.addEventListener('DOMContentLoaded', () => {
   const quoteModalClose = document.getElementById('quoteModalClose');
   const quoteTriggers = document.querySelectorAll('.quote-trigger');
 
-  function openModal() {
-    quoteModal.classList.add('active');
-    document.body.style.overflow = 'hidden';
-    // Focus first input
-    setTimeout(() => {
-      quoteModal.querySelector('input')?.focus();
-    }, 300);
-  }
-
-  function closeModal() {
-    quoteModal.classList.remove('active');
-    document.body.style.overflow = '';
-  }
-
-  quoteTriggers.forEach(trigger => {
-    trigger.addEventListener('click', e => {
-      e.preventDefault();
-      openModal();
-    });
-  });
-
-  quoteModalClose.addEventListener('click', closeModal);
-
-  // Close on overlay click
-  quoteModal.addEventListener('click', e => {
-    if (e.target === quoteModal) closeModal();
-  });
-
-  // Close on Escape key
-  document.addEventListener('keydown', e => {
-    if (e.key === 'Escape' && quoteModal.classList.contains('active')) {
-      closeModal();
+  if (quoteModal) {
+    function openModal() {
+      quoteModal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+      setTimeout(() => {
+        quoteModal.querySelector('input')?.focus();
+      }, 300);
     }
-  });
 
-  // Quote form submit
-  document.getElementById('quoteForm').addEventListener('submit', e => {
-    e.preventDefault();
-    alert('Thank you! Your quote request has been submitted. We\'ll be in touch within 24 hours.');
-    e.target.reset();
-    closeModal();
-  });
+    function closeModal() {
+      quoteModal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    quoteTriggers.forEach(trigger => {
+      trigger.addEventListener('click', e => {
+        e.preventDefault();
+        openModal();
+      });
+    });
+
+    if (quoteModalClose) quoteModalClose.addEventListener('click', closeModal);
+
+    quoteModal.addEventListener('click', e => {
+      if (e.target === quoteModal) closeModal();
+    });
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && quoteModal.classList.contains('active')) {
+        closeModal();
+      }
+    });
+
+    const quoteForm = document.getElementById('quoteForm');
+    if (quoteForm) {
+      quoteForm.addEventListener('submit', e => {
+        e.preventDefault();
+        alert('Thank you! Your quote request has been submitted. We\'ll be in touch within 24 hours.');
+        e.target.reset();
+        closeModal();
+      });
+    }
+  }
 
 });
