@@ -99,6 +99,8 @@ a {
   position: fixed;
   inset: 0;
   z-index: 9999;
+  width: 100%;
+  max-width: 100%;
   background: var(--primary-dark);
   display: flex;
   flex-direction: column;
@@ -122,13 +124,14 @@ a {
 }
 
 .loader-logo {
+  display: block;
+  width: 240px;
+  max-width: 60%;
   height: auto;
-  width: 260px;
-  max-width: 70%;
   object-fit: contain;
   border-radius: 8px;
-  display: block;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .loader-spinner {
