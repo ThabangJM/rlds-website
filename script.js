@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ==== TYPING EFFECT ==== */
   const typingEl = document.getElementById('typingText');
   if (typingEl) {
-    const phrases = ['Office Stationery', 'Packaging Supplies', 'Desk Organisation', 'Planning Tools', 'Writing Instruments'];
+    const phrases = ['Protective Clothing (PPE)', 'Cleaning Chemicals & Machines', 'Branding', 'Stationery'];
     let phraseIndex = 0;
     let charIndex = 0;
     let isDeleting = false;

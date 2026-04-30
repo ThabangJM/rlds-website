@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cleaning Chemicals &amp; Machines — RDS</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ============ PAGE LOADER ============ -->
+  <div class="page-loader" id="pageLoader" role="status" aria-label="Loading page">
+    <img src="RLDS Logo.svg" alt="RDS" class="loader-logo" />
+    <div class="loader-spinner"></div>
+  </div>
+
+  <!-- ============ SCROLL PROGRESS BAR ============ -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar scrolled" id="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <img src="RLDS Logo.svg" alt="Rialivhuwa Diversified Solutions" class="navbar__logo-img" />
+      </a>
+      <nav class="navbar__links" id="navLinks" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="ppe.html">PPE</a>
+        <a href="cleaning.html" class="active">Cleaning</a>
+        <a href="branding.html">Branding</a>
+        <a href="stationery.html">Stationery</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="index.html#contact" class="nav-quote-btn">Get Quote</a>
+      </nav>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ PAGE HERO BANNER ============ -->
+  <section class="page-hero">
+    <div class="page-hero__overlay"></div>
+    <div class="page-hero__bg" style="background-image: url('https://images.unsplash.com/photo-1563453392212-326f5e854473?w=1400&q=80')"></div>
+    <div class="container page-hero__content">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a> <span>/</span> <span>Cleaning Chemicals &amp; Machines</span>
+      </nav>
+      <h1>Cleaning Chemicals &amp; Machines</h1>
+      <p>Professional-grade cleaning solutions and equipment to keep your workplace hygienic and productive.</p>
+    </div>
+  </section>
+
+  <!-- ============ INTRO ============ -->
+  <section class="detail-intro section">
+    <div class="container detail-intro__grid">
+      <div class="detail-intro__text">
+        <h2 class="section__title">A Clean Workplace is a Productive Workplace</h2>
+        <p>Hygiene and cleanliness directly impact employee health, customer perception, and overall productivity. From daily surface sanitisation to deep industrial cleaning — having the right chemicals and machinery makes the difference.</p>
+        <p>At <strong>RDS</strong>, we supply a wide range of industrial and commercial cleaning chemicals alongside professional cleaning machines. Whether you manage an office block, a factory, a school, or a healthcare facility, we have the products to keep it spotless.</p>
+        <a href="index.html#contact" class="btn btn--primary">Request a Quote</a>
+      </div>
+      <div class="detail-intro__image">
+        <img src="https://images.unsplash.com/photo-1563453392212-326f5e854473?w=600&q=80" alt="Cleaning chemicals and equipment" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRODUCT CATEGORIES ============ -->
+  <section class="detail-categories section" style="background: var(--neutral);">
+    <div class="container">
+      <h2 class="section__title center">Cleaning Categories</h2>
+      <p class="section__desc center">From daily hygiene products to heavy-duty industrial chemicals and machinery — we supply it all.</p>
+
+      <div class="detail-grid">
+
+        <div class="detail-card">
+          <div class="detail-card__icon">&#129532;</div>
+          <h3>Surface Cleaners &amp; Disinfectants</h3>
+          <p>Multi-surface sprays, disinfectants, sanitisers, and antibacterial solutions for offices, kitchens, bathrooms, and industrial environments.</p>
+          <ul>
+            <li>Multi-Surface Disinfectant Sprays</li>
+            <li>Bleach &amp; Chlorine-Based Cleaners</li>
+            <li>Alcohol-Based Hand Sanitisers</li>
+            <li>Antibacterial Surface Wipes</li>
+            <li>Kitchen Degreasers</li>
+            <li>Bathroom &amp; Toilet Cleaners</li>
+          </ul>
+        </div>
+
+        <div class="detail-card">
+          <div class="detail-card__icon">&#128268;</div>
+          <h3>Floor Care Chemicals</h3>
+          <p>Floor strippers, sealers, polishes, and scrubbing solutions designed for tiles, vinyl, concrete, and timber flooring.</p>
+          <ul>
+            <li>Floor Stripper &amp; Degreaser</li>
+            <li>Floor Sealer &amp; Polish</li>
+            <li>Neutral Floor Cleaner</li>
+            <li>Carpet Shampoo &amp; Spot Remover</li>
+            <li>Non-Slip Floor Treatment</li>
+            <li>Industrial Floor Scrubbing Solution</li>
+          </ul>
+        </div>
+
+        <div class="detail-card">
+          <div class="detail-card__icon">&#129531;</div>
+          <h3>Industrial &amp; Speciality Chemicals</h3>
+          <p>Heavy-duty chemicals for manufacturing, engineering, food processing, and institutional cleaning applications.</p>
+          <ul>
+            <li>Caustic Soda &amp; Acid Cleaners</li>
+            <li>Engine &amp; Machinery Degreasers</li>
+            <li>Solvent-Based Cleaners</li>
+            <li>Drain Unblockers &amp; Descalers</li>
+            <li>Rust Removers &amp; Inhibitors</li>
+            <li>Food-Safe Sanitisers (HACCP)</li>
+          </ul>
+        </div>
+
+        <div class="detail-card">
+          <div class="detail-card__icon">&#128268;</div>
+          <h3>Cleaning Machines — Scrubbers</h3>
+          <p>Walk-behind and ride-on floor scrubber-dryers for efficient, large-area floor cleaning in commercial and industrial settings.</p>
+          <ul>
+            <li>Walk-Behind Scrubber Dryers</li>
+            <li>Ride-On Scrubber Dryers</li>
+            <li>Compact Battery-Operated Scrubbers</li>
+            <li>Scrubber Pads &amp; Brushes</li>
+            <li>Scrubber Machine Servicing</li>
+            <li>Rental &amp; Lease Options Available</li>
+          </ul>
+        </div>
+
+        <div class="detail-card">
+          <div class="detail-card__icon">&#127981;</div>
+          <h3>Pressure Washers &amp; Vacuums</h3>
+          <p>High-pressure washers for exterior and industrial cleaning, plus commercial vacuum cleaners for daily indoor maintenance.</p>
+          <ul>
+            <li>Cold Water Pressure Washers</li>
+            <li>Hot Water Pressure Washers</li>
+            <li>Wet &amp; Dry Industrial Vacuums</li>
+            <li>Backpack Vacuums</li>
+            <li>HEPA Filter Vacuums</li>
+            <li>Central Vacuum Systems</li>
+          </ul>
+        </div>
+
+        <div class="detail-card">
+          <div class="detail-card__icon">&#129529;</div>
+          <h3>Hygiene Consumables &amp; Dispensers</h3>
+          <p>Toilet tissue, hand towels, soap dispensers, and bin liners — everything needed to maintain hygiene stations across your facility.</p>
+          <ul>
+            <li>Toilet Tissue (Bulk Rolls)</li>
+            <li>Interleaved Hand Towels</li>
+            <li>Foam &amp; Liquid Soap Dispensers</li>
+            <li>Sanitiser Dispenser Stands</li>
+            <li>Pedal Bins &amp; Bin Liners</li>
+            <li>Urinal Screens &amp; Blocks</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY RDS FOR CLEANING ============ -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section__title center">Why Choose RDS for Cleaning Supplies?</h2>
+      <p class="section__desc center">We make it easy to maintain a clean, safe, and compliant workplace.</p>
+      <div class="detail-features__grid">
+        <div class="detail-feature">
+          <div class="detail-card__icon">&#128200;</div>
+          <h3>Competitive Bulk Pricing</h3>
+          <p>We offer volume discounts on chemicals and consumables, making it cost-effective to keep large facilities fully stocked.</p>
+        </div>
+        <div class="detail-feature">
+          <div class="detail-card__icon">&#9989;</div>
+          <h3>Compliant &amp; Certified Products</h3>
+          <p>Our chemical products are SABS-approved and compliant with occupational health, food safety, and environmental regulations.</p>
+        </div>
+        <div class="detail-feature">
+          <div class="detail-card__icon">&#128666;</div>
+          <h3>Regular Scheduled Deliveries</h3>
+          <p>Set up a recurring supply schedule so your facility never runs out of essential cleaning chemicals and consumables.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BRANDS WE STOCK ============ -->
+  <section class="detail-brands section" style="background: var(--neutral);">
+    <div class="container">
+      <h2 class="section__title center">Cleaning Brands We Supply</h2>
+      <p class="section__desc center">Trusted brands used by professional cleaning companies across South Africa.</p>
+      <div class="detail-brands__grid">
+        <div class="detail-brand"><strong>Domestos</strong><span>Disinfectants &amp; Bleach</span></div>
+        <div class="detail-brand"><strong>Sunlight</strong><span>Dishwashing &amp; Surface</span></div>
+        <div class="detail-brand"><strong>Jeyes</strong><span>Industrial Cleaners</span></div>
+        <div class="detail-brand"><strong>Kärcher</strong><span>Cleaning Machines</span></div>
+        <div class="detail-brand"><strong>Tennant</strong><span>Scrubbers &amp; Sweepers</span></div>
+        <div class="detail-brand"><strong>Shield</strong><span>Industrial Chemicals</span></div>
+        <div class="detail-brand"><strong>Dettol</strong><span>Hygiene &amp; Sanitising</span></div>
+        <div class="detail-brand"><strong>Tork</strong><span>Hygiene Consumables</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="detail-cta section">
+    <div class="container detail-cta__inner">
+      <h2>Ready to Keep Your Workplace Spotless?</h2>
+      <p>Contact us for a tailored cleaning supply quote — chemicals, machines, and consumables delivered to your door across South Africa.</p>
+      <div class="detail-cta__buttons">
+        <a href="index.html#contact" class="btn btn--primary">Get a Quote</a>
+        <a href="index.html" class="btn btn--outline-dark">Back to Home</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" class="navbar__logo">
+          <img src="RLDS Logo.svg" alt="Rialivhuwa Diversified Solutions" class="footer__logo-img" />
+        </a>
+        <p>Your trusted partner for PPE, Cleaning, Branding, and Stationery across South Africa.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+      <div class="footer__col">
+        <h4>Core Services</h4>
+        <a href="ppe.html">Protective Clothing (PPE)</a>
+        <a href="cleaning.html">Cleaning Chemicals &amp; Machines</a>
+        <a href="branding.html">Branding</a>
+        <a href="stationery.html">Stationery</a>
+      </div>
+      <div class="footer__col">
+        <h4>Connect</h4>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; 2026 Rialivhuwa Diversified Solutions. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">&#8679;</button>
+
+  <a href="https://wa.me/27726191475" target="_blank" rel="noopener noreferrer" class="whatsapp-btn" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 32 32" width="28" height="28" fill="#fff">
+      <path d="M16.004 0C7.164 0 .004 7.16.004 16c0 2.82.736 5.58 2.136 8.008L.004 32l8.196-2.108A15.93 15.93 0 0016.004 32C24.844 32 32 24.84 32 16S24.844 0 16.004 0zm0 29.12a13.08 13.08 0 01-6.86-1.932l-.492-.292-4.86 1.252 1.296-4.728-.324-.512A13.04 13.04 0 012.884 16c0-7.24 5.884-13.12 13.12-13.12 7.24 0 13.12 5.88 13.12 13.12s-5.88 13.12-13.12 13.12zm7.2-9.828c-.396-.2-2.34-1.152-2.704-1.284-.36-.132-.624-.2-.888.2-.264.396-1.02 1.284-1.248 1.548-.228.264-.46.3-.852.1-.396-.2-1.668-.616-3.18-1.96-1.176-1.044-1.968-2.336-2.2-2.732-.228-.396-.024-.612.172-.808.176-.176.396-.46.592-.692.2-.228.264-.396.396-.66.132-.264.068-.492-.032-.692-.1-.2-.888-2.14-1.22-2.932-.32-.768-.644-.664-.888-.676-.228-.012-.492-.016-.756-.016s-.692.1-1.052.492c-.36.396-1.38 1.348-1.38 3.288 0 1.94 1.412 3.816 1.612 4.08.2.264 2.784 4.252 6.744 5.96.944.408 1.68.652 2.256.832.948.3 1.812.26 2.492.156.76-.112 2.34-.956 2.672-1.876.328-.924.328-1.716.228-1.876-.1-.164-.36-.264-.756-.46z"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
