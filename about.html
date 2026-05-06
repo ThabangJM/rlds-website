@@ -8,8 +8,299 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    .about-page {
+      background: #f6f6f6;
+    }
+
+    .about-hero {
+      position: relative;
+      min-height: 300px;
+      padding-top: 120px;
+      display: flex;
+      align-items: flex-end;
+      background:
+        linear-gradient(100deg, rgba(18, 67, 49, 0.9), rgba(50, 126, 85, 0.72)),
+        url("about-hero.jpg") center/cover no-repeat;
+      color: #fff;
+    }
+
+    .about-hero__inner {
+      width: 100%;
+      padding: 48px 0 44px;
+    }
+
+    .about-hero__crumbs {
+      font-size: 0.82rem;
+      opacity: 0.85;
+      margin-bottom: 10px;
+    }
+
+    .about-hero h1 {
+      color: #fff;
+      margin-bottom: 8px;
+      font-size: clamp(2rem, 6vw, 3.2rem);
+    }
+
+    .about-hero p {
+      max-width: 520px;
+      opacity: 0.93;
+      color: #f0f7f2;
+    }
+
+    .about-section {
+      padding: 90px 0;
+    }
+
+    .about-section--light {
+      background: #f6f6f6;
+    }
+
+    .about-section--cream {
+      background: #efe3d0;
+    }
+
+    .about-intro {
+      display: grid;
+      grid-template-columns: 1.05fr 1fr;
+      gap: 42px;
+      align-items: center;
+    }
+
+    .about-intro h2,
+    .about-center-title,
+    .about-supply-title,
+    .about-features-title,
+    .about-cta h2 {
+      font-family: 'Playfair Display', serif;
+      color: #1f4a39;
+    }
+
+    .about-intro h2 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      margin-bottom: 18px;
+    }
+
+    .about-intro p {
+      color: #46534c;
+      margin-bottom: 14px;
+    }
+
+    .about-intro .btn {
+      margin-top: 8px;
+    }
+
+    .about-intro__media img {
+      width: 100%;
+      border-radius: 14px;
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.12);
+      display: block;
+    }
+
+    .about-center-title,
+    .about-supply-title,
+    .about-features-title {
+      text-align: center;
+      font-size: clamp(2rem, 5vw, 2.9rem);
+      margin-bottom: 10px;
+    }
+
+    .about-center-subtitle,
+    .about-section-subtitle {
+      text-align: center;
+      color: #59675f;
+      max-width: 740px;
+      margin: 0 auto;
+    }
+
+    .mission-grid {
+      margin-top: 52px;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 26px;
+    }
+
+    .mission-card {
+      text-align: center;
+      padding: 8px 14px;
+    }
+
+    .mission-card__icon {
+      font-size: 1.2rem;
+      margin-bottom: 12px;
+    }
+
+    .mission-card h3 {
+      font-size: 1.4rem;
+      margin-bottom: 8px;
+      color: #234f3d;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .mission-card p {
+      font-size: 0.95rem;
+      line-height: 1.65;
+      color: #4d5953;
+      max-width: 320px;
+      margin: 0 auto;
+    }
+
+    .about-supply-grid {
+      margin-top: 42px;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .supply-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 24px 22px;
+      border: 1px solid #e8ece8;
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.04);
+    }
+
+    .supply-card:nth-child(4) {
+      grid-column: 1 / 2;
+    }
+
+    .supply-card__icon {
+      font-size: 1.3rem;
+      margin-bottom: 14px;
+    }
+
+    .supply-card h3 {
+      color: #204936;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.35rem;
+      margin-bottom: 10px;
+    }
+
+    .supply-card p {
+      color: #506058;
+      font-size: 0.95rem;
+      margin-bottom: 12px;
+    }
+
+    .supply-card ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .supply-card li {
+      font-size: 0.9rem;
+      color: #54655e;
+      padding: 6px 0;
+      border-bottom: 1px solid #f1f3f2;
+    }
+
+    .supply-card li::before {
+      content: "✓ ";
+      color: #2f7a57;
+      font-weight: 700;
+    }
+
+    .about-features-grid {
+      margin-top: 46px;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+    }
+
+    .about-feature {
+      text-align: center;
+      padding: 4px 10px;
+    }
+
+    .about-feature__icon {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .about-feature h3 {
+      color: #1f4b38;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      margin-bottom: 8px;
+    }
+
+    .about-feature p {
+      color: #58655e;
+      font-size: 0.95rem;
+      max-width: 325px;
+      margin: 0 auto;
+      line-height: 1.65;
+    }
+
+    .about-cta {
+      background: #1f5a43;
+      text-align: center;
+      color: #fff;
+    }
+
+    .about-cta h2 {
+      color: #fff;
+      font-size: clamp(2rem, 5vw, 2.8rem);
+      margin-bottom: 10px;
+    }
+
+    .about-cta p {
+      color: rgba(255, 255, 255, 0.84);
+      max-width: 670px;
+      margin: 0 auto;
+    }
+
+    .about-cta__actions {
+      margin-top: 22px;
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .about-cta__actions .btn--outline {
+      color: #fff;
+      border-color: rgba(255, 255, 255, 0.5);
+    }
+
+    @media (max-width: 1024px) {
+      .about-intro {
+        grid-template-columns: 1fr;
+      }
+
+      .mission-grid,
+      .about-supply-grid,
+      .about-features-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .supply-card:nth-child(4) {
+        grid-column: auto;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .about-section {
+        padding: 72px 0;
+      }
+
+      .mission-grid,
+      .about-supply-grid,
+      .about-features-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about-hero {
+        min-height: 250px;
+      }
+    }
+  </style>
 </head>
-<body>
+<body class="about-page">
+
+  <!-- ============ SKIP TO CONTENT (A11y) ============ -->
+  <a href="#about-hero" class="skip-link">Skip to main content</a>
 
   <!-- ============ PAGE LOADER ============ -->
   <div class="page-loader" id="pageLoader" role="status" aria-label="Loading page">
@@ -21,7 +312,7 @@
   <div class="scroll-progress" id="scrollProgress"></div>
 
   <!-- ============ NAVBAR ============ -->
-  <header class="navbar scrolled" id="navbar">
+  <header class="navbar" id="navbar">
     <div class="container navbar__inner">
       <a href="index.html" class="navbar__logo">
         <img src="RLDS Logo.svg" alt="Rialivhuwa Diversified Solutions" class="navbar__logo-img" />
@@ -34,7 +325,7 @@
         <a href="branding.html">Branding</a>
         <a href="stationery.html">Stationery</a>
         <a href="index.html#contact">Contact</a>
-        <a href="index.html#contact" class="nav-quote-btn">Get Quote</a>
+        <a href="#" class="quote-trigger nav-quote-btn">Get Quote</a>
       </nav>
       <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation">
         <span></span><span></span><span></span>
@@ -42,62 +333,125 @@
     </div>
   </header>
 
-  <!-- ============ PAGE HERO BANNER ============ -->
-  <section class="page-hero">
-    <div class="page-hero__overlay"></div>
-    <div class="page-hero__bg" style="background-image: url('https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=1400&q=80')"></div>
-    <div class="container page-hero__content">
-      <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="index.html">Home</a> <span>/</span> <span>About Us</span>
-      </nav>
+  <!-- ============ PAGE HERO ============ -->
+  <section class="about-hero" id="about-hero">
+    <div class="container about-hero__inner">
+      <p class="about-hero__crumbs">Home / About Us</p>
       <h1>About Us</h1>
       <p>Proudly South African. Committed to quality, service, and your success.</p>
     </div>
   </section>
 
   <!-- ============ WHO WE ARE ============ -->
-  <section class="detail-intro section">
-    <div class="container detail-intro__grid">
-      <div class="detail-intro__text">
-        <h2 class="section__title">Who We Are</h2>
-        <p><strong>Rialivhuwa Diversified Solutions (RDS)</strong> is a proudly South African supplier dedicated to equipping businesses with everything they need to operate safely, professionally, and efficiently.</p>
-        <p>We specialise in four core areas: <strong>Protective Clothing (PPE)</strong>, <strong>Cleaning Chemicals &amp; Machines</strong>, <strong>Branding</strong>, and <strong>Stationery &amp; Office Supplies</strong>. From a single-person home office to a large enterprise, we tailor our offering to suit your needs and budget.</p>
-        <p>Based in South Africa, we serve clients across all industries — including education, healthcare, construction, retail, and corporate sectors — delivering quality products at competitive prices, with service that goes the extra mile.</p>
-        <a href="index.html#contact" class="btn btn--primary">Get in Touch</a>
+  <section class="about-section about-section--light reveal-section" data-reveal="left" id="who-we-are">
+    <div class="container about-intro">
+      <div>
+        <h2>Who We Are</h2>
+        <p>At RDS, we believe that the success of any business depends on having the right tools, equipment, and working environment. Office stationery is a fundamental part of every organisation, supporting smooth and efficient daily operations, whether for a home office, a growing startup, or a large enterprise.</p>
+        <p>In addition to stationery, we offer a wide range of business solutions including cleaning chemicals, industrial and office machinery, durable office furniture, and professional branding services. Our aim is to provide a complete solution that helps businesses operate efficiently and maintain a professional image.</p>
+        <p>We help you choose the right office essentials, from quality writing instruments and premium paper products to packaging materials and planning tools, ensuring your workspace is well-organised and productive.</p>
+        <p>At RDS, we are committed to helping you create a workspace where functionality meets inspiration, one solution at a time.</p>
+        <a href="index.html#contact" class="btn btn--primary">Get In Touch</a>
       </div>
-      <div class="detail-intro__image">
-        <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=600&q=80" alt="RDS team at work" loading="lazy" />
+      <div class="about-intro__media">
+        <img src="about-team.jpg" alt="Business team at work" loading="lazy" style="margin-top: 16px; width: 100%; border-radius: 14px; box-shadow: 0 16px 36px rgba(0,0,0,0.12); display: block;" />
       </div>
     </div>
   </section>
 
   <!-- ============ MISSION & VISION ============ -->
-  <section class="section" style="background: var(--neutral);">
+  <section class="about-section about-section--cream reveal-section" data-reveal="right" id="mission">
     <div class="container">
-      <h2 class="section__title center">Our Mission &amp; Vision</h2>
-      <p class="section__desc center">Everything we do is guided by a clear purpose — to make quality accessible for every South African business.</p>
-      <div class="detail-features__grid">
-        <div class="detail-feature">
-          <div class="detail-card__icon">&#127919;</div>
+      <h2 class="about-center-title">Our Mission &amp; Vision</h2>
+      <p class="about-center-subtitle">Everything we do is guided by a clear purpose to make quality accessible for every South African business.</p>
+      <div class="mission-grid">
+        <div class="mission-card">
+          <div class="mission-card__icon">&#127919;</div>
           <h3>Our Mission</h3>
-          <p>To supply South African businesses with reliable, high-quality products — from PPE and cleaning solutions to branding and stationery — at competitive prices, with outstanding customer service every step of the way.</p>
+          <p>To supply South African businesses with reliable, high-quality products from PPE and cleaning solutions to branding and stationery at competitive prices, with outstanding customer service every step of the way.</p>
         </div>
-        <div class="detail-feature">
-          <div class="detail-card__icon">&#128161;</div>
+        <div class="mission-card">
+          <div class="mission-card__icon">&#128161;</div>
           <h3>Our Vision</h3>
           <p>To become the most trusted diversified supply partner in South Africa, known for consistency, quality, and the ability to serve businesses of every size across every industry.</p>
         </div>
-        <div class="detail-feature">
-          <div class="detail-card__icon">&#10024;</div>
+        <div class="mission-card">
+          <div class="mission-card__icon">&#10024;</div>
           <h3>Our Values</h3>
-          <p>Integrity, quality, reliability, and a genuine commitment to our clients. We treat every order — big or small — with the same care and attention to detail.</p>
+          <p>Integrity, quality, reliability, and a genuine commitment to our clients. We treat every order big or small with the same care and attention to detail.</p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- ============ WHAT WE SUPPLY ============ -->
+  <section class="about-section about-section--light reveal-section" data-reveal="left" id="what-we-supply">
+    <div class="container">
+      <h2 class="about-supply-title">What We Supply</h2>
+      <p class="about-section-subtitle">Four core categories that cover everything your business needs to run safely and professionally.</p>
+
+      <div class="about-supply-grid">
+        <article class="supply-card">
+          <div class="supply-card__icon">&#129466;</div>
+          <h3>Protective Clothing (PPE)</h3>
+          <p>Comprehensive range of personal protective equipment to keep your workforce safe and compliant on the job.</p>
+          <ul>
+            <li>Overalls &amp; Coveralls</li>
+            <li>Safety Boots &amp; Shoes</li>
+            <li>Hard Hats &amp; Helmets</li>
+            <li>Hi-Visibility Vests &amp; Jackets</li>
+            <li>Gloves, Masks &amp; Eye Protection</li>
+            <li>Flame-Resistant Clothing</li>
+          </ul>
+        </article>
+
+        <article class="supply-card">
+          <div class="supply-card__icon">&#129532;</div>
+          <h3>Cleaning Chemicals &amp; Machines</h3>
+          <p>Professional-grade cleaning solutions and equipment for offices, factories, schools, and healthcare facilities.</p>
+          <ul>
+            <li>Surface Disinfectants &amp; Sanitisers</li>
+            <li>Floor Care Chemicals</li>
+            <li>Industrial Degreasers</li>
+            <li>Pressure Washers</li>
+            <li>Scrubber Dryers</li>
+            <li>Hygiene Consumables</li>
+          </ul>
+        </article>
+
+        <article class="supply-card">
+          <div class="supply-card__icon">&#127775;</div>
+          <h3>Branding</h3>
+          <p>Put your brand in front of the right people with our full range of branded merchandise and corporate gifting solutions.</p>
+          <ul>
+            <li>Branded Clothing &amp; Uniforms</li>
+            <li>Corporate Gifts &amp; Hampers</li>
+            <li>Promotional Items</li>
+            <li>Branded Stationery</li>
+            <li>Signage &amp; Banners</li>
+            <li>Custom Packaging</li>
+          </ul>
+        </article>
+
+        <article class="supply-card">
+          <div class="supply-card__icon">✎</div>
+          <h3>Stationery &amp; Office Supplies</h3>
+          <p>Everything your office needs from everyday essentials to premium desk accessories and packaging supplies.</p>
+          <ul>
+            <li>Pens, Pencils &amp; Markers</li>
+            <li>Paper &amp; Notebooks</li>
+            <li>Packaging &amp; Mailing Supplies</li>
+            <li>Planning &amp; Calendar Tools</li>
+            <li>Desk Organisation</li>
+            <li>Office Furniture</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
   <!-- ============ STATS ============ -->
-  <section class="stats">
+  <section class="stats" id="stats">
     <div class="container stats__grid">
       <div class="stat">
         <span class="stat__number" data-target="1200">0</span>+
@@ -118,121 +472,55 @@
     </div>
   </section>
 
-  <!-- ============ WHAT WE SUPPLY ============ -->
-  <section class="section">
-    <div class="container">
-      <h2 class="section__title center">What We Supply</h2>
-      <p class="section__desc center">Four core categories that cover everything your business needs to run safely and professionally.</p>
-      <div class="detail-grid">
-
-        <div class="detail-card">
-          <div class="detail-card__icon">&#129510;</div>
-          <h3>Protective Clothing (PPE)</h3>
-          <p>Comprehensive range of personal protective equipment to keep your workforce safe and compliant on the job.</p>
-          <ul>
-            <li>Overalls &amp; Coveralls</li>
-            <li>Safety Boots &amp; Shoes</li>
-            <li>Hard Hats &amp; Helmets</li>
-            <li>Hi-Visibility Vests &amp; Jackets</li>
-            <li>Gloves, Masks &amp; Eye Protection</li>
-            <li>Flame-Retardant Clothing</li>
-          </ul>
-        </div>
-
-        <div class="detail-card">
-          <div class="detail-card__icon">&#129532;</div>
-          <h3>Cleaning Chemicals &amp; Machines</h3>
-          <p>Professional-grade cleaning solutions and equipment for offices, factories, schools, and healthcare facilities.</p>
-          <ul>
-            <li>Surface Disinfectants &amp; Sanitisers</li>
-            <li>Floor Care Chemicals</li>
-            <li>Industrial Degreasers</li>
-            <li>Pressure Washers</li>
-            <li>Scrubber Dryers</li>
-            <li>Hygiene Consumables</li>
-          </ul>
-        </div>
-
-        <div class="detail-card">
-          <div class="detail-card__icon">&#127775;</div>
-          <h3>Branding</h3>
-          <p>Put your brand in front of the right people with our full range of branded merchandise and corporate gifting solutions.</p>
-          <ul>
-            <li>Branded Clothing &amp; Uniforms</li>
-            <li>Corporate Gifts &amp; Hampers</li>
-            <li>Promotional Items</li>
-            <li>Branded Stationery</li>
-            <li>Signage &amp; Banners</li>
-            <li>Custom Packaging</li>
-          </ul>
-        </div>
-
-        <div class="detail-card">
-          <div class="detail-card__icon">&#128394;</div>
-          <h3>Stationery &amp; Office Supplies</h3>
-          <p>Everything your office needs — from everyday essentials to premium desk accessories and packaging supplies.</p>
-          <ul>
-            <li>Pens, Pencils &amp; Markers</li>
-            <li>Paper &amp; Notebooks</li>
-            <li>Packaging &amp; Mailing Supplies</li>
-            <li>Planning &amp; Calendar Tools</li>
-            <li>Desk Organisation</li>
-            <li>Office Furniture</li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
   <!-- ============ WHY CHOOSE RDS ============ -->
-  <section class="section" style="background: var(--neutral);">
+  <section class="about-section about-section--cream reveal-section" data-reveal="right" id="why-rds">
     <div class="container">
-      <h2 class="section__title center">Why Choose RDS?</h2>
-      <p class="section__desc center">We're more than a supplier — we're your long-term business partner.</p>
-      <div class="detail-features__grid">
-        <div class="detail-feature">
-          <div class="detail-card__icon">&#127466;&#127462;</div>
+      <h2 class="about-features-title">Why Choose RDS?</h2>
+      <p class="about-section-subtitle">We are more than a supplier we are your long-term business partner.</p>
+
+      <div class="about-features-grid">
+        <article class="about-feature">
+          <div class="about-feature__icon">EA</div>
           <h3>Proudly South African</h3>
           <p>We are a 100% South African-owned business, committed to supporting local industry and delivering solutions that understand the South African market.</p>
-        </div>
-        <div class="detail-feature">
-          <div class="detail-card__icon">&#128666;</div>
+        </article>
+        <article class="about-feature">
+          <div class="about-feature__icon">&#128666;</div>
           <h3>Nationwide Delivery</h3>
-          <p>Fast, reliable delivery to every corner of South Africa — from Johannesburg to Cape Town, Durban, and everywhere in between.</p>
-        </div>
-        <div class="detail-feature">
-          <div class="detail-card__icon">&#9733;</div>
+          <p>Fast, reliable delivery to every corner of South Africa from Johannesburg to Cape Town, Durban, and everywhere in between.</p>
+        </article>
+        <article class="about-feature">
+          <div class="about-feature__icon">★</div>
           <h3>Premium Quality</h3>
-          <p>We stock only trusted brands that deliver consistent quality. No cheap imitations — just supplies that last and perform as promised.</p>
-        </div>
-        <div class="detail-feature">
-          <div class="detail-card__icon">&#128176;</div>
+          <p>We stock only trusted brands that deliver consistent quality. No cheap imitations just supplies that last and perform as promised.</p>
+        </article>
+        <article class="about-feature">
+          <div class="about-feature__icon">&#128176;</div>
           <h3>Competitive Bulk Pricing</h3>
-          <p>Special discounts for businesses ordering in volume. The more you order, the more you save — making RDS the smart choice for growing businesses.</p>
-        </div>
-        <div class="detail-feature">
-          <div class="detail-card__icon">&#128172;</div>
+          <p>Special discounts for businesses ordering in volume. The more you order, the more you save making RDS the smart choice for growing businesses.</p>
+        </article>
+        <article class="about-feature">
+          <div class="about-feature__icon">&#128172;</div>
           <h3>Dedicated Support</h3>
           <p>Our friendly, knowledgeable team is always ready to help you find exactly what your business needs. Personal service, every time.</p>
-        </div>
-        <div class="detail-feature">
-          <div class="detail-card__icon">&#9989;</div>
+        </article>
+        <article class="about-feature">
+          <div class="about-feature__icon">&#9989;</div>
           <h3>Compliant Products</h3>
           <p>Our PPE and cleaning products meet SABS and occupational health compliance standards, so you can buy with confidence.</p>
-        </div>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- ============ CTA ============ -->
-  <section class="detail-cta section">
-    <div class="container detail-cta__inner">
+  <!-- ============ CONTACT CTA ============ -->
+  <section class="about-section about-cta">
+    <div class="container">
       <h2>Ready to Partner with RDS?</h2>
-      <p>Whether you need a once-off order or a long-term supply agreement, we're here to help. Contact us today for a personalised quote.</p>
-      <div class="detail-cta__buttons">
-        <a href="index.html#contact" class="btn btn--primary">Get a Quote</a>
-        <a href="index.html" class="btn btn--outline-dark">Back to Home</a>
+      <p>Whether you need a once-off order or a long-term supply agreement, we are here to help. Contact us today for a personalised quote.</p>
+      <div class="about-cta__actions">
+        <button class="btn btn--primary quote-trigger">Get a Quote</button>
+        <a href="index.html" class="btn btn--outline">Back to Home</a>
       </div>
     </div>
   </section>
@@ -244,7 +532,7 @@
         <a href="index.html" class="navbar__logo">
           <img src="RLDS Logo.svg" alt="Rialivhuwa Diversified Solutions" class="footer__logo-img" />
         </a>
-        <p>Your trusted partner for PPE, Cleaning, Branding, and Stationery across South Africa.</p>
+        <p>Your trusted partner for PPE, Cleaning, Branding, and Stationery services across South Africa.</p>
       </div>
       <div class="footer__col">
         <h4>Quick Links</h4>
@@ -274,8 +562,31 @@
     </div>
   </footer>
 
+  <!-- ============ REQUEST A QUOTE MODAL ============ -->
+  <div class="modal-overlay" id="quoteModal" role="dialog" aria-modal="true" aria-labelledby="quoteModalTitle">
+    <div class="modal">
+      <button class="modal__close" id="quoteModalClose" aria-label="Close modal">&times;</button>
+      <h2 class="modal__title" id="quoteModalTitle">Request a Quote</h2>
+      <p class="modal__desc">Fill in your details and we'll get back to you with a custom quote for your office supply needs.</p>
+      <form class="modal__form" id="quoteForm">
+        <div class="modal__row">
+          <input type="text" placeholder="Full Name" required aria-label="Full name" />
+          <input type="email" placeholder="Email Address" required aria-label="Email address" />
+        </div>
+        <div class="modal__row">
+          <input type="tel" placeholder="Phone Number" aria-label="Phone number" />
+          <input type="text" placeholder="Company Name" aria-label="Company name" />
+        </div>
+        <textarea rows="4" placeholder="What supplies do you need? Include quantities if possible..." required aria-label="Quote details"></textarea>
+        <button type="submit" class="btn btn--primary">Submit Request</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Back to Top -->
   <button class="back-to-top" id="backToTop" aria-label="Back to top">&#8679;</button>
 
+  <!-- WhatsApp Floating Button -->
   <a href="https://wa.me/27726191475" target="_blank" rel="noopener noreferrer" class="whatsapp-btn" aria-label="Chat on WhatsApp">
     <svg viewBox="0 0 32 32" width="28" height="28" fill="#fff">
       <path d="M16.004 0C7.164 0 .004 7.16.004 16c0 2.82.736 5.58 2.136 8.008L.004 32l8.196-2.108A15.93 15.93 0 0016.004 32C24.844 32 32 24.84 32 16S24.844 0 16.004 0zm0 29.12a13.08 13.08 0 01-6.86-1.932l-.492-.292-4.86 1.252 1.296-4.728-.324-.512A13.04 13.04 0 012.884 16c0-7.24 5.884-13.12 13.12-13.12 7.24 0 13.12 5.88 13.12 13.12s-5.88 13.12-13.12 13.12zm7.2-9.828c-.396-.2-2.34-1.152-2.704-1.284-.36-.132-.624-.2-.888.2-.264.396-1.02 1.284-1.248 1.548-.228.264-.46.3-.852.1-.396-.2-1.668-.616-3.18-1.96-1.176-1.044-1.968-2.336-2.2-2.732-.228-.396-.024-.612.172-.808.176-.176.396-.46.592-.692.2-.228.264-.396.396-.66.132-.264.068-.492-.032-.692-.1-.2-.888-2.14-1.22-2.932-.32-.768-.644-.664-.888-.676-.228-.012-.492-.016-.756-.016s-.692.1-1.052.492c-.36.396-1.38 1.348-1.38 3.288 0 1.94 1.412 3.816 1.612 4.08.2.264 2.784 4.252 6.744 5.96.944.408 1.68.652 2.256.832.948.3 1.812.26 2.492.156.76-.112 2.34-.956 2.672-1.876.328-.924.328-1.716.228-1.876-.1-.164-.36-.264-.756-.46z"/>
