@@ -6,13 +6,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ==== PAGE LOADER ==== */
   const loader = document.getElementById('pageLoader');
-  window.addEventListener('load', () => {
-    setTimeout(() => {
+  if (loader) {
+    let loaderHidden = false;
+
+    function hideLoader() {
+      if (loaderHidden) return;
+      loaderHidden = true;
       loader.classList.add('hidden');
-    }, 800);
-  });
-  // Fallback in case load event already fired
-  setTimeout(() => loader.classList.add('hidden'), 2500);
+
+      window.setTimeout(() => {
+        loader.style.display = 'none';
+      }, 550);
+    }
+
+    if (document.readyState === 'complete') {
+      window.setTimeout(hideLoader, 5000);
+    } else {
+      window.addEventListener('load', () => {
+        window.setTimeout(hideLoader, 5000);
+      }, { once: true });
+    }
+
+    // Fail safe so the page never stays covered if another resource stalls.
+    window.setTimeout(hideLoader, 5500);
+  }
 
   /* ==== SCROLL PROGRESS BAR ==== */
   const scrollProgress = document.getElementById('scrollProgress');
