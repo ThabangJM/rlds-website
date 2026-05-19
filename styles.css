@@ -2195,6 +2195,21 @@ textarea:focus-visible {
   text-align: center;
 }
 
+.detail-feature__image {
+  width: 100%;
+  height: 210px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.detail-feature__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .detail-feature h3 {
   font-family: 'Playfair Display', serif;
   font-size: 1.15rem;
