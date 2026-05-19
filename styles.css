@@ -2172,8 +2172,8 @@ textarea:focus-visible {
 }
 
 .detail-brand__logo {
-  width: 120px;
-  height: 64px;
+  width: 180px;
+  height: 100px;
   object-fit: contain;
   object-position: center;
 }
