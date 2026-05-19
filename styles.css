@@ -2435,6 +2435,15 @@ textarea:focus-visible {
     padding: 24px 20px;
   }
 
+  .detail-card__image {
+    margin: -24px -20px 16px;
+    height: 170px;
+  }
+
+  .detail-feature__image {
+    height: 170px;
+  }
+
   .detail-card h3 {
     font-size: 1.05rem;
   }
@@ -2530,6 +2539,15 @@ textarea:focus-visible {
 
   .detail-card {
     padding: 20px 16px;
+  }
+
+  .detail-card__image {
+    margin: -20px -16px 14px;
+    height: 150px;
+  }
+
+  .detail-feature__image {
+    height: 145px;
   }
 
   .detail-card__icon {
